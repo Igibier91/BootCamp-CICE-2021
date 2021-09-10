@@ -1,24 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ile-yw-tMf">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--AQUI SI DEJA-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppHolaMundo_Reto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFD-tW-SmS">
+                                <rect key="frame" x="135.5" y="433" width="143" height="30"/>
+                                <state key="normal" title="Ir a View Controller 2"/>
+                                <connections>
+                                    <segue destination="AeZ-DJ-uI9" kind="show" id="065-p4-Fzr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oFD-tW-SmS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9m7-oL-Mgr"/>
+                            <constraint firstItem="oFD-tW-SmS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PdQ-HD-CdI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="AQUI SI DEJA" id="IEG-UW-mcm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1952.1739130434785" y="99.776785714285708"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Gfo-rf-PuA">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ile-yw-tMf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8kk-MV-TvI">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="LGE-ED-lQO" kind="relationship" relationship="viewControllers" id="icP-Gi-pS0"/>
+                        <segue destination="kBb-Vc-qgo" kind="relationship" relationship="viewControllers" id="w5z-3n-Dae"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cEB-Ek-mrI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+        </scene>
+        <!--VC 1-->
+        <scene sceneID="G1A-xq-Nou">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LGE-ED-lQO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="VC 1" image="square.and.pencil" catalog="system" id="uYh-8X-8Mw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dl6-Cc-K1r">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q0u-lk-ExW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uXu-VA-Vr1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IMb-68-l8b">
+            <objects>
+                <viewController id="AeZ-DJ-uI9" customClass="ViewController" customModule="AppHolaMundo_Reto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbA-9P-m0i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PbT-3Z-dtC"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dg9-MC-cEb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehH-Y4-qQe" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2841" y="100"/>
+        </scene>
+        <!--Coloca ahi-->
+        <scene sceneID="WHi-b1-46y">
+            <objects>
+                <viewController id="Y1y-GL-CTQ" customClass="ViewController" customModule="AppHolaMundo_Reto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92N-4q-0GC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUf-Uu-lr4">
+                                <rect key="frame" x="135.5" y="433" width="143" height="30"/>
+                                <state key="normal" title="Ir a View Controller 2"/>
+                                <connections>
+                                    <segue destination="zSj-sn-1QN" kind="show" id="fSq-1o-Vx3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="i68-Ou-KAo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TUf-Uu-lr4" firstAttribute="centerX" secondItem="92N-4q-0GC" secondAttribute="centerX" id="ZqH-ts-Exz"/>
+                            <constraint firstItem="TUf-Uu-lr4" firstAttribute="centerY" secondItem="92N-4q-0GC" secondAttribute="centerY" id="lwy-P3-hdj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Coloca ahi" id="E5d-5v-rCY">
+                        <barButtonItem key="backBarButtonItem" title=" " id="BLg-rH-Hrh"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvi-me-Sxq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1951" y="839"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Hxe-7i-WCB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kBb-Vc-qgo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="pencil.circle" catalog="system" id="6be-f3-1US"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XB3-J1-uoo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y1y-GL-CTQ" kind="relationship" relationship="rootViewController" id="FjH-Wz-UCA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeC-hi-kO0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1041" y="839"/>
+        </scene>
+        <!--PARA ATRAS-->
+        <scene sceneID="ioT-Jm-hUq">
+            <objects>
+                <viewController id="zSj-sn-1QN" customClass="ViewController" customModule="AppHolaMundo_Reto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8zc-SN-oJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PL3-bI-pM6"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="PARA ATRAS" id="1iz-YE-dxs">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nYL-XT-lK7"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="40Y-98-5ob" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2841" y="840"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pencil.circle" catalog="system" width="128" height="121"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
