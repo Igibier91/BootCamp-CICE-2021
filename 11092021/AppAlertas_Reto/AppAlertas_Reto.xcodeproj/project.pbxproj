@@ -13,6 +13,7 @@
 		559D356226ECBABF0033B63D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559D356026ECBABF0033B63D /* Main.storyboard */; };
 		559D356426ECBAC10033B63D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 559D356326ECBAC10033B63D /* Assets.xcassets */; };
 		559D356726ECBAC10033B63D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 559D356526ECBAC10033B63D /* LaunchScreen.storyboard */; };
+		559D357326ECC2A90033B63D /* SegundoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559D357226ECC2A90033B63D /* SegundoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		559D356326ECBAC10033B63D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		559D356626ECBAC10033B63D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		559D356826ECBAC10033B63D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		559D357226ECC2A90033B63D /* SegundoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		559D355926ECBABF0033B63D /* AppAlertas_Reto */ = {
 			isa = PBXGroup;
 			children = (
-				559D355A26ECBABF0033B63D /* AppDelegate.swift */,
-				559D355C26ECBABF0033B63D /* SceneDelegate.swift */,
-				559D355E26ECBABF0033B63D /* ViewController.swift */,
-				559D356026ECBABF0033B63D /* Main.storyboard */,
+				559D357126ECBC020033B63D /* Core */,
+				559D356F26ECBBEA0033B63D /* Modules */,
+				559D356E26ECBBD60033B63D /* StoryBoard */,
 				559D356326ECBAC10033B63D /* Assets.xcassets */,
 				559D356526ECBAC10033B63D /* LaunchScreen.storyboard */,
 				559D356826ECBAC10033B63D /* Info.plist */,
 			);
 			path = AppAlertas_Reto;
+			sourceTree = "<group>";
+		};
+		559D356E26ECBBD60033B63D /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				559D356026ECBABF0033B63D /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		559D356F26ECBBEA0033B63D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				559D357026ECBBEF0033B63D /* Sections */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		559D357026ECBBEF0033B63D /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				559D355E26ECBABF0033B63D /* ViewController.swift */,
+				559D357226ECC2A90033B63D /* SegundoViewController.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		559D357126ECBC020033B63D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				559D355A26ECBABF0033B63D /* AppDelegate.swift */,
+				559D355C26ECBABF0033B63D /* SceneDelegate.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +174,7 @@
 			files = (
 				559D355F26ECBABF0033B63D /* ViewController.swift in Sources */,
 				559D355B26ECBABF0033B63D /* AppDelegate.swift in Sources */,
+				559D357326ECC2A90033B63D /* SegundoViewController.swift in Sources */,
 				559D355D26ECBABF0033B63D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
