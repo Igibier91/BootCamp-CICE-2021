@@ -13,6 +13,8 @@
 		55F9A34526F4DF880004A056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F9A34326F4DF880004A056 /* Main.storyboard */; };
 		55F9A34726F4DF890004A056 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55F9A34626F4DF890004A056 /* Assets.xcassets */; };
 		55F9A34A26F4DF890004A056 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F9A34826F4DF890004A056 /* LaunchScreen.storyboard */; };
+		55F9A35926F501DA0004A056 /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9A35826F501DA0004A056 /* SegundaViewController.swift */; };
+		55F9A35C26F50B640004A056 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F9A35B26F50B640004A056 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		55F9A34626F4DF890004A056 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55F9A34926F4DF890004A056 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55F9A34B26F4DF890004A056 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55F9A35826F501DA0004A056 /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		55F9A35B26F50B640004A056 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		55F9A33C26F4DF880004A056 /* AppDataPicker_PickerView */ = {
 			isa = PBXGroup;
 			children = (
+				55F9A35A26F50B570004A056 /* UtilsHelpers */,
 				55F9A35326F4E05D0004A056 /* Storyboard */,
 				55F9A35226F4E04E0004A056 /* Modules */,
 				55F9A35126F4E03B0004A056 /* Core */,
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				55F9A34126F4DF880004A056 /* ViewController.swift */,
+				55F9A35826F501DA0004A056 /* SegundaViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				55F9A34326F4DF880004A056 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		55F9A35A26F50B570004A056 /* UtilsHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				55F9A35B26F50B640004A056 /* Utils.swift */,
+			);
+			path = UtilsHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +175,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F9A35C26F50B640004A056 /* Utils.swift in Sources */,
+				55F9A35926F501DA0004A056 /* SegundaViewController.swift in Sources */,
 				55F9A34226F4DF880004A056 /* ViewController.swift in Sources */,
 				55F9A33E26F4DF880004A056 /* AppDelegate.swift in Sources */,
 				55F9A34026F4DF880004A056 /* SceneDelegate.swift in Sources */,

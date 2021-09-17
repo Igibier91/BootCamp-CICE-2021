@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWa-ef-ncB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Imagen1" translatesAutoresizingMaskIntoConstraints="NO" id="BWa-ef-ncB">
                                 <rect key="frame" x="20" y="393" width="350" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Wod-kg-MO2"/>
@@ -71,15 +71,21 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detalleTextoQuesoTV" destination="aLe-LS-veh" id="E34-au-nho"/>
+                        <outlet property="imagenQuesoIV" destination="BWa-ef-ncB" id="pJD-u5-27U"/>
+                        <outlet property="pickerQuesoPV" destination="pb4-AD-Q8Y" id="CCX-VX-4EM"/>
+                        <outlet property="tituloQuesoLBL" destination="GIt-p8-OhO" id="FaY-w5-bgj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
         </scene>
-        <!--View Controller-->
+        <!--Segunda View Controller-->
         <scene sceneID="5UA-dl-iSM">
             <objects>
-                <viewController id="yeo-hL-MuU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SegundaViewController" id="yeo-hL-MuU" customClass="SegundaViewController" customModule="AppDataPicker_PickerView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dfQ-ZW-GRZ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,10 +105,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-EG-4Y4">
-                                <rect key="frame" x="20" y="270" width="350" height="243"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="maria" translatesAutoresizingMaskIntoConstraints="NO" id="gUK-EG-4Y4">
+                                <rect key="frame" x="20" y="270" width="350" height="472"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="243" id="7Nj-6A-TMc"/>
+                                    <constraint firstAttribute="height" constant="472" id="7Nj-6A-TMc"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -124,6 +130,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zqe-2v-zXl"/>
+                    <connections>
+                        <outlet property="codigoPostalTF" destination="UuW-nv-CIZ" id="UzM-SW-Utf"/>
+                        <outlet property="fotoPerfilTF" destination="gUK-EG-4Y4" id="8gU-J0-jMZ"/>
+                        <outlet property="localidadesTF" destination="4gJ-KD-ktZ" id="ccf-Hm-5pd"/>
+                        <outlet property="prioridadTeletrabajoTF" destination="8SS-ln-8ft" id="6ZG-hZ-LAS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8oA-7e-hWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,6 +161,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Imagen1" width="541" height="426"/>
+        <image name="maria" width="2077" height="2767"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
