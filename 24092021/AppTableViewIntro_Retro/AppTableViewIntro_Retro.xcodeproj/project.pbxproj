@@ -15,6 +15,7 @@
 		5585FC0426FE4DE6005952E1 /* ListaMesesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5585FC0226FE4DE6005952E1 /* ListaMesesViewController.xib */; };
 		5585FC0826FE509A005952E1 /* MesesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5585FC0626FE509A005952E1 /* MesesTableViewCell.swift */; };
 		5585FC0926FE509A005952E1 /* MesesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5585FC0726FE509A005952E1 /* MesesTableViewCell.xib */; };
+		5585FC0C26FE567E005952E1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5585FC0B26FE567E005952E1 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5585FC0226FE4DE6005952E1 /* ListaMesesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaMesesViewController.xib; sourceTree = "<group>"; };
 		5585FC0626FE509A005952E1 /* MesesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesesTableViewCell.swift; sourceTree = "<group>"; };
 		5585FC0726FE509A005952E1 /* MesesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MesesTableViewCell.xib; sourceTree = "<group>"; };
+		5585FC0B26FE567E005952E1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		5585FBE726FE4A4B005952E1 /* AppTableViewIntro_Retro */ = {
 			isa = PBXGroup;
 			children = (
+				5585FC0A26FE566F005952E1 /* Utils */,
 				5585FBFD26FE4AB4005952E1 /* Core */,
 				5585FBFC26FE4AA9005952E1 /* Modules */,
 				5585FBF126FE4A4D005952E1 /* Assets.xcassets */,
@@ -103,6 +106,14 @@
 				5585FC0726FE509A005952E1 /* MesesTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		5585FC0A26FE566F005952E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5585FC0B26FE567E005952E1 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5585FC0C26FE567E005952E1 /* Utils.swift in Sources */,
 				5585FBE926FE4A4B005952E1 /* AppDelegate.swift in Sources */,
 				5585FC0326FE4DE6005952E1 /* ListaMesesViewController.swift in Sources */,
 				5585FBFF26FE4BB1005952E1 /* AppCoreCoordinator.swift in Sources */,
