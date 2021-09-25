@@ -27,6 +27,14 @@
 		55861FCD26FF19C20079D007 /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FCC26FF19C20079D007 /* ListaCochesCoordinator.swift */; };
 		55861FD126FF1AC00079D007 /* DetalleListaMesesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FCF26FF1AC00079D007 /* DetalleListaMesesViewController.swift */; };
 		55861FD226FF1AC00079D007 /* DetalleListaMesesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55861FD026FF1AC00079D007 /* DetalleListaMesesViewController.xib */; };
+		55861FD426FF25090079D007 /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FD326FF25090079D007 /* HomeTabBarCoordinator.swift */; };
+		55861FD826FF276B0079D007 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FD626FF276B0079D007 /* PerfilViewController.swift */; };
+		55861FD926FF276B0079D007 /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55861FD726FF276B0079D007 /* PerfilViewController.xib */; };
+		55861FDB26FF27D90079D007 /* PerfilViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FDA26FF27D90079D007 /* PerfilViewCoordinator.swift */; };
+		55861FE126FF2BB00079D007 /* PerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FDF26FF2BB00079D007 /* PerfilCell.swift */; };
+		55861FE226FF2BB00079D007 /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55861FE026FF2BB00079D007 /* PerfilCell.xib */; };
+		55861FE526FF2BD40079D007 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FE326FF2BD40079D007 /* PostCell.swift */; };
+		55861FE626FF2BD40079D007 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55861FE426FF2BD40079D007 /* PostCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +60,14 @@
 		55861FCC26FF19C20079D007 /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
 		55861FCF26FF1AC00079D007 /* DetalleListaMesesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleListaMesesViewController.swift; sourceTree = "<group>"; };
 		55861FD026FF1AC00079D007 /* DetalleListaMesesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleListaMesesViewController.xib; sourceTree = "<group>"; };
+		55861FD326FF25090079D007 /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
+		55861FD626FF276B0079D007 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		55861FD726FF276B0079D007 /* PerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
+		55861FDA26FF27D90079D007 /* PerfilViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewCoordinator.swift; sourceTree = "<group>"; };
+		55861FDF26FF2BB00079D007 /* PerfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCell.swift; sourceTree = "<group>"; };
+		55861FE026FF2BB00079D007 /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
+		55861FE326FF2BD40079D007 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		55861FE426FF2BD40079D007 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +86,7 @@
 			children = (
 				55342A7726FF070B002F5354 /* HomeTabBarViewController.swift */,
 				55342A7826FF070B002F5354 /* HomeTabBarViewController.xib */,
+				55861FD326FF25090079D007 /* HomeTabBarCoordinator.swift */,
 			);
 			path = HomeTabBarView;
 			sourceTree = "<group>";
@@ -152,6 +169,7 @@
 		5585FC0026FE4DC2005952E1 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				55861FD526FF275D0079D007 /* PerfilView */,
 				55861FCE26FF1AA60079D007 /* DetallesListaMesesView */,
 				55861FCB26FF18C10079D007 /* ListaView */,
 				55342A7626FF06D6002F5354 /* HomeTabBarView */,
@@ -195,6 +213,28 @@
 				55861FD026FF1AC00079D007 /* DetalleListaMesesViewController.xib */,
 			);
 			path = DetallesListaMesesView;
+			sourceTree = "<group>";
+		};
+		55861FD526FF275D0079D007 /* PerfilView */ = {
+			isa = PBXGroup;
+			children = (
+				55861FDC26FF2B770079D007 /* Cell */,
+				55861FD626FF276B0079D007 /* PerfilViewController.swift */,
+				55861FDA26FF27D90079D007 /* PerfilViewCoordinator.swift */,
+				55861FD726FF276B0079D007 /* PerfilViewController.xib */,
+			);
+			path = PerfilView;
+			sourceTree = "<group>";
+		};
+		55861FDC26FF2B770079D007 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55861FDF26FF2BB00079D007 /* PerfilCell.swift */,
+				55861FE026FF2BB00079D007 /* PerfilCell.xib */,
+				55861FE326FF2BD40079D007 /* PostCell.swift */,
+				55861FE426FF2BD40079D007 /* PostCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,12 +296,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				55861FD226FF1AC00079D007 /* DetalleListaMesesViewController.xib in Resources */,
+				55861FD926FF276B0079D007 /* PerfilViewController.xib in Resources */,
 				5585FBF526FE4A4D005952E1 /* LaunchScreen.storyboard in Resources */,
 				55342A7A26FF070B002F5354 /* HomeTabBarViewController.xib in Resources */,
 				5585FBF226FE4A4D005952E1 /* Assets.xcassets in Resources */,
+				55861FE226FF2BB00079D007 /* PerfilCell.xib in Resources */,
 				5585FC0426FE4DE6005952E1 /* ListaMesesViewController.xib in Resources */,
 				55342A8326FF0F91002F5354 /* CochesCell.xib in Resources */,
 				555F9FA126FF05FE0036E0F3 /* ListaCochesViewController.xib in Resources */,
+				55861FE626FF2BD40079D007 /* PostCell.xib in Resources */,
 				5585FC0926FE509A005952E1 /* MesesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +316,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55861FE526FF2BD40079D007 /* PostCell.swift in Sources */,
+				55861FD426FF25090079D007 /* HomeTabBarCoordinator.swift in Sources */,
 				555F9F9C26FF03AD0036E0F3 /* CochesModel.swift in Sources */,
 				5585FC0C26FE567E005952E1 /* Utils.swift in Sources */,
+				55861FDB26FF27D90079D007 /* PerfilViewCoordinator.swift in Sources */,
 				5585FBE926FE4A4B005952E1 /* AppDelegate.swift in Sources */,
 				5585FC0326FE4DE6005952E1 /* ListaMesesViewController.swift in Sources */,
 				55861FD126FF1AC00079D007 /* DetalleListaMesesViewController.swift in Sources */,
@@ -284,6 +330,8 @@
 				5585FC0826FE509A005952E1 /* MesesTableViewCell.swift in Sources */,
 				55861FCD26FF19C20079D007 /* ListaCochesCoordinator.swift in Sources */,
 				555F9F9F26FF05BF0036E0F3 /* ListaCochesViewController.swift in Sources */,
+				55861FE126FF2BB00079D007 /* PerfilCell.swift in Sources */,
+				55861FD826FF276B0079D007 /* PerfilViewController.swift in Sources */,
 				55342A7C26FF0CE9002F5354 /* ListaMesesCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
