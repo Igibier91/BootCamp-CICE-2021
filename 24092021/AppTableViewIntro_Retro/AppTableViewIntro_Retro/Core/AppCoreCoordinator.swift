@@ -23,7 +23,8 @@ class AppCoreCoordinator{
 
 extension AppCoreCoordinator: AppCoreCoordinatorProtocol{
     internal func setPrincipalVC(in window: UIWindow) {
-        actualVC = ListaMesesViewController()
+        // donde nace la app
+        actualVC = HomeTabBarViewController()
         window.rootViewController = actualVC
         window.makeKeyAndVisible()
     }

@@ -6,24 +6,24 @@
 //
 
 import Foundation
-import UIKit
+import  UIKit
 
 protocol ReuseIdentifierProtocol: AnyObject {
-    static var defaulReuseIdentifier: String{ get }
+    static var defaultReuseIdentifier: String { get }
 }
 
 extension ReuseIdentifierProtocol where Self: UIView {
-    static var defaultReuseIdentifier: String{
+    static var defaultReuseIdentifier: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
 }
 
 protocol ReuseIdentifierViewControllerProtocol: AnyObject {
-    static var defaulReuseIdentifier: String{ get }
+    static var defaultReuseIdentifier: String { get }
 }
 
 extension ReuseIdentifierViewControllerProtocol where Self: UIViewController {
-    static var defaultReuseIdentifier: String{
+    static var defaultReuseIdentifier: String {
         return NSStringFromClass(self).components(separatedBy: ".").last!
     }
 }

@@ -12,7 +12,7 @@ protocol MesesTableCiewCellProtocol{
 }
 
 
-class MesesTableViewCell: UITableViewCell {
+class MesesTableViewCell: UITableViewCell, ReuseIdentifierProtocol {
 
     
     //MARK: - IBOutlets

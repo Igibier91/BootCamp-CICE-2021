@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListaMesesViewController: UIViewController {
+class ListaMesesViewController: UIViewController, ReuseIdentifierViewControllerProtocol {
 
     //MARK: - Variables
     let arrayMeses = ["Enero", "Febrero", "Marzo", "Abril"]
@@ -18,6 +18,7 @@ class ListaMesesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Meses"
         configuracionTV()
 
     }
@@ -47,6 +48,18 @@ extension ListaMesesViewController: UITableViewDelegate, UITableViewDataSource {
         return cellMeses
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = arrayMeses[indexPath.row]
+        let vc = DetalleListaMesesViewController()
+        vc.mesSeleccionado = model
+        
+        //
+        // self.show(vc, sender: nil)
+        //
+        self.present(vc, animated: true, completion: nil)
+        
+        
+    }
     
     
 }
