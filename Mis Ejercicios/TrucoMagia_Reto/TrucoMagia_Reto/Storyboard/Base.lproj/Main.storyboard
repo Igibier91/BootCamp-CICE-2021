@@ -88,13 +88,14 @@
         <!--Truco-->
         <scene sceneID="UTU-Fl-W6t">
             <objects>
-                <viewController id="kgj-6w-EjY" sceneMemberID="viewController">
+                <viewController id="kgj-6w-EjY" customClass="TrucoVC" customModule="TrucoMagia_Reto" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1bR-Ce-gSL">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF6-bP-z6U">
-                                <rect key="frame" x="10" y="98.000000000000014" width="370" height="149.33333333333337"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF6-bP-z6U">
+                                <rect key="frame" x="10" y="126" width="370" height="149.33333333333337"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Quiero realizar un truco de adivinación contigo. Quiero que cierres los ojos y imagines un número del 1 al 100, cuando lo tengas pulsa en ¡Lo tengo!</string>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -115,46 +116,44 @@
                                     <segue destination="bNJ-9H-MBV" kind="show" id="QCa-aG-FCZ"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wizard-1454385_640" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-mL-HIz">
-                                <rect key="frame" x="10" y="257.33333333333331" width="370" height="299.99999999999994"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="86F-DQ-Ey5"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-GV-e64">
+                                <rect key="frame" x="10" y="98" width="91" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjt-qd-ykf">
+                                <rect key="frame" x="111" y="98" width="93" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wizard-1454385_640" translatesAutoresizingMaskIntoConstraints="NO" id="Gi8-mL-HIz">
+                                <rect key="frame" x="10" y="293" width="370" height="299.99999999999994"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ce-GV-e64">
-                                <rect key="frame" x="83" y="88" width="91" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Apellido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjt-qd-ykf">
-                                <rect key="frame" x="174" y="88" width="93" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="va6-H8-465"/>
                         <color key="backgroundColor" systemColor="systemIndigoColor"/>
                         <constraints>
-                            <constraint firstItem="qF6-bP-z6U" firstAttribute="leading" secondItem="va6-H8-465" secondAttribute="leading" constant="10" id="1if-gi-jit"/>
+                            <constraint firstItem="cjt-qd-ykf" firstAttribute="leading" secondItem="4ce-GV-e64" secondAttribute="trailing" constant="10" id="9V3-Em-FJq"/>
+                            <constraint firstItem="4ce-GV-e64" firstAttribute="top" secondItem="va6-H8-465" secondAttribute="top" constant="10" id="9fg-HY-ada"/>
+                            <constraint firstItem="4ce-GV-e64" firstAttribute="leading" secondItem="va6-H8-465" secondAttribute="leading" constant="10" id="9oY-hg-kYf"/>
                             <constraint firstItem="va6-H8-465" firstAttribute="bottom" secondItem="EUH-CM-Bn0" secondAttribute="bottom" constant="30" id="9w8-fC-REu"/>
-                            <constraint firstItem="Gi8-mL-HIz" firstAttribute="leading" secondItem="va6-H8-465" secondAttribute="leading" constant="10" id="Do1-he-fuA"/>
                             <constraint firstItem="EUH-CM-Bn0" firstAttribute="leading" secondItem="va6-H8-465" secondAttribute="leading" constant="10" id="IMD-Oa-PDq"/>
-                            <constraint firstItem="va6-H8-465" firstAttribute="trailing" secondItem="Gi8-mL-HIz" secondAttribute="trailing" constant="10" id="JaX-UM-gZ2"/>
                             <constraint firstItem="va6-H8-465" firstAttribute="trailing" secondItem="EUH-CM-Bn0" secondAttribute="trailing" constant="10" id="M0e-0a-PDx"/>
-                            <constraint firstItem="va6-H8-465" firstAttribute="trailing" secondItem="qF6-bP-z6U" secondAttribute="trailing" constant="10" id="dxa-RP-TbO"/>
-                            <constraint firstItem="qF6-bP-z6U" firstAttribute="top" secondItem="va6-H8-465" secondAttribute="top" constant="10" id="egY-jT-2kU"/>
-                            <constraint firstItem="Gi8-mL-HIz" firstAttribute="top" secondItem="qF6-bP-z6U" secondAttribute="bottom" constant="10" id="tUh-tq-sQz"/>
+                            <constraint firstItem="cjt-qd-ykf" firstAttribute="top" secondItem="va6-H8-465" secondAttribute="top" constant="10" id="med-GJ-0lN"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Truco" id="DhS-eC-dYi"/>
+                    <connections>
+                        <outlet property="apellidoLBL" destination="cjt-qd-ykf" id="XyP-So-sB9"/>
+                        <outlet property="nombreLBL" destination="4ce-GV-e64" id="Zcb-PP-UNB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YD2-SB-yeI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1927.5362318840582" y="109.82142857142857"/>
+            <point key="canvasLocation" x="1926.1538461538462" y="109.47867298578198"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nF4-yW-H2P">

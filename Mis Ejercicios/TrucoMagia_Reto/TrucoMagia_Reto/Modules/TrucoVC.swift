@@ -12,21 +12,23 @@ class TrucoVC: UIViewController {
     // MARK: - Variables
     var datosUsuario = DatosUsuarioModel()
     
+    // MARK: - IBOutlets
+    @IBOutlet weak var nombreLBL: UILabel!
+    @IBOutlet weak var apellidoLBL: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configuredUI()
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configuredUI() {
+        // Si llega a ser nulo me pone vacío (Espacio en blanco) ""
+        self.nombreLBL.text = "\(datosUsuario.nombreData ?? "")"
+        self.apellidoLBL.text = "\(datosUsuario.apellidoData ?? "")"
     }
-    */
-
 }
