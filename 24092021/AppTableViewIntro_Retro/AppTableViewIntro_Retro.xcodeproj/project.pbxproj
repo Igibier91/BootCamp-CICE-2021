@@ -35,6 +35,8 @@
 		55861FE226FF2BB00079D007 /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55861FE026FF2BB00079D007 /* PerfilCell.xib */; };
 		55861FE526FF2BD40079D007 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55861FE326FF2BD40079D007 /* PostCell.swift */; };
 		55861FE626FF2BD40079D007 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55861FE426FF2BD40079D007 /* PostCell.xib */; };
+		55CF109C27075F4000EFDFD1 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF109B27075F4000EFDFD1 /* UserData.swift */; };
+		55CF109E27076B1200EFDFD1 /* UserCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF109D27076B1200EFDFD1 /* UserCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		55861FE026FF2BB00079D007 /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
 		55861FE326FF2BD40079D007 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		55861FE426FF2BD40079D007 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		55CF109B27075F4000EFDFD1 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		55CF109D27076B1200EFDFD1 /* UserCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				555F9F9B26FF03AD0036E0F3 /* CochesModel.swift */,
+				55CF109B27075F4000EFDFD1 /* UserData.swift */,
+				55CF109D27076B1200EFDFD1 /* UserCellData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -328,7 +334,9 @@
 				5585FBFF26FE4BB1005952E1 /* AppCoreCoordinator.swift in Sources */,
 				55342A7926FF070B002F5354 /* HomeTabBarViewController.swift in Sources */,
 				5585FC0826FE509A005952E1 /* MesesTableViewCell.swift in Sources */,
+				55CF109C27075F4000EFDFD1 /* UserData.swift in Sources */,
 				55861FCD26FF19C20079D007 /* ListaCochesCoordinator.swift in Sources */,
+				55CF109E27076B1200EFDFD1 /* UserCellData.swift in Sources */,
 				555F9F9F26FF05BF0036E0F3 /* ListaCochesViewController.swift in Sources */,
 				55861FE126FF2BB00079D007 /* PerfilCell.swift in Sources */,
 				55861FD826FF276B0079D007 /* PerfilViewController.swift in Sources */,
