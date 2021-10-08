@@ -20,8 +20,14 @@ final class AppCoreCoordinator{
 
 extension AppCoreCoordinator: AppCoreCoordinatorProtocol{
     func initialApplication(with window: UIWindow) {
+        self.muestraRutaUserDefault()
         self.actualVC = UserDataCoordinator.navigation()
         window.rootViewController = self.actualVC
         window.makeKeyAndVisible()
     }
+    
+    private func muestraRutaUserDefault(){
+        print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+    }
+
 }

@@ -14,6 +14,19 @@
 		55CF10C627083F9800EFDFD1 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10C427083F9800EFDFD1 /* UserDataViewController.swift */; };
 		55CF10C727083F9800EFDFD1 /* UserDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF10C527083F9800EFDFD1 /* UserDataViewController.xib */; };
 		55CF10C927083FBF00EFDFD1 /* UserDataCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10C827083FBF00EFDFD1 /* UserDataCoordinator.swift */; };
+		55CF10CC270847F100EFDFD1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10CB270847F100EFDFD1 /* Utils.swift */; };
+		55CF10D12708668300EFDFD1 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10CF2708668300EFDFD1 /* HomeTabBarViewController.swift */; };
+		55CF10D22708668300EFDFD1 /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF10D02708668300EFDFD1 /* HomeTabBarViewController.xib */; };
+		55CF10D42708669700EFDFD1 /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10D32708669700EFDFD1 /* HomeTabBarCoordinator.swift */; };
+		55CF10D82708737E00EFDFD1 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10D62708737E00EFDFD1 /* PerfilViewController.swift */; };
+		55CF10D92708737E00EFDFD1 /* PerfilViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF10D72708737E00EFDFD1 /* PerfilViewController.xib */; };
+		55CF10DB2708738C00EFDFD1 /* PerfilViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10DA2708738C00EFDFD1 /* PerfilViewCoordinator.swift */; };
+		55CF10DF2708744600EFDFD1 /* MesesCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10DD2708744600EFDFD1 /* MesesCochesViewController.swift */; };
+		55CF10E02708744600EFDFD1 /* MesesCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF10DE2708744600EFDFD1 /* MesesCochesViewController.xib */; };
+		55CF10E42708747900EFDFD1 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10E22708747900EFDFD1 /* PostsViewController.swift */; };
+		55CF10E52708747900EFDFD1 /* PostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55CF10E32708747900EFDFD1 /* PostsViewController.xib */; };
+		55CF10E72708757C00EFDFD1 /* MesesCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10E62708757C00EFDFD1 /* MesesCochesCoordinator.swift */; };
+		55CF10E92708758B00EFDFD1 /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CF10E82708758B00EFDFD1 /* PostsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +39,19 @@
 		55CF10C427083F9800EFDFD1 /* UserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataViewController.swift; sourceTree = "<group>"; };
 		55CF10C527083F9800EFDFD1 /* UserDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataViewController.xib; sourceTree = "<group>"; };
 		55CF10C827083FBF00EFDFD1 /* UserDataCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCoordinator.swift; sourceTree = "<group>"; };
+		55CF10CB270847F100EFDFD1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		55CF10CF2708668300EFDFD1 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		55CF10D02708668300EFDFD1 /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		55CF10D32708669700EFDFD1 /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
+		55CF10D62708737E00EFDFD1 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		55CF10D72708737E00EFDFD1 /* PerfilViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilViewController.xib; sourceTree = "<group>"; };
+		55CF10DA2708738C00EFDFD1 /* PerfilViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewCoordinator.swift; sourceTree = "<group>"; };
+		55CF10DD2708744600EFDFD1 /* MesesCochesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesesCochesViewController.swift; sourceTree = "<group>"; };
+		55CF10DE2708744600EFDFD1 /* MesesCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MesesCochesViewController.xib; sourceTree = "<group>"; };
+		55CF10E22708747900EFDFD1 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		55CF10E32708747900EFDFD1 /* PostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsViewController.xib; sourceTree = "<group>"; };
+		55CF10E62708757C00EFDFD1 /* MesesCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesesCochesCoordinator.swift; sourceTree = "<group>"; };
+		55CF10E82708758B00EFDFD1 /* PostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 		55CF10AA27083D8900EFDFD1 /* AppUserDefault */ = {
 			isa = PBXGroup;
 			children = (
+				55CF10CA270847E400EFDFD1 /* Utils */,
 				55CF10C227083F6000EFDFD1 /* Modules */,
 				55CF10BF27083E9500EFDFD1 /* Core */,
 				55CF10AB27083D8900EFDFD1 /* AppDelegate.swift */,
@@ -87,11 +114,71 @@
 		55CF10C327083F8600EFDFD1 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				55CF10E12708744F00EFDFD1 /* PostsView */,
+				55CF10DC2708743000EFDFD1 /* MesesCochesView */,
+				55CF10D52708736100EFDFD1 /* PerfilView */,
+				55CF10CE2708665200EFDFD1 /* HomeTabBarView */,
+				55CF10CD2708663600EFDFD1 /* RegistroView */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		55CF10CA270847E400EFDFD1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				55CF10CB270847F100EFDFD1 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		55CF10CD2708663600EFDFD1 /* RegistroView */ = {
+			isa = PBXGroup;
+			children = (
 				55CF10C427083F9800EFDFD1 /* UserDataViewController.swift */,
 				55CF10C527083F9800EFDFD1 /* UserDataViewController.xib */,
 				55CF10C827083FBF00EFDFD1 /* UserDataCoordinator.swift */,
 			);
-			path = Sections;
+			path = RegistroView;
+			sourceTree = "<group>";
+		};
+		55CF10CE2708665200EFDFD1 /* HomeTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				55CF10CF2708668300EFDFD1 /* HomeTabBarViewController.swift */,
+				55CF10D02708668300EFDFD1 /* HomeTabBarViewController.xib */,
+				55CF10D32708669700EFDFD1 /* HomeTabBarCoordinator.swift */,
+			);
+			path = HomeTabBarView;
+			sourceTree = "<group>";
+		};
+		55CF10D52708736100EFDFD1 /* PerfilView */ = {
+			isa = PBXGroup;
+			children = (
+				55CF10D62708737E00EFDFD1 /* PerfilViewController.swift */,
+				55CF10D72708737E00EFDFD1 /* PerfilViewController.xib */,
+				55CF10DA2708738C00EFDFD1 /* PerfilViewCoordinator.swift */,
+			);
+			path = PerfilView;
+			sourceTree = "<group>";
+		};
+		55CF10DC2708743000EFDFD1 /* MesesCochesView */ = {
+			isa = PBXGroup;
+			children = (
+				55CF10DD2708744600EFDFD1 /* MesesCochesViewController.swift */,
+				55CF10DE2708744600EFDFD1 /* MesesCochesViewController.xib */,
+				55CF10E62708757C00EFDFD1 /* MesesCochesCoordinator.swift */,
+			);
+			path = MesesCochesView;
+			sourceTree = "<group>";
+		};
+		55CF10E12708744F00EFDFD1 /* PostsView */ = {
+			isa = PBXGroup;
+			children = (
+				55CF10E22708747900EFDFD1 /* PostsViewController.swift */,
+				55CF10E32708747900EFDFD1 /* PostsViewController.xib */,
+				55CF10E82708758B00EFDFD1 /* PostsCoordinator.swift */,
+			);
+			path = PostsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				55CF10C727083F9800EFDFD1 /* UserDataViewController.xib in Resources */,
+				55CF10D92708737E00EFDFD1 /* PerfilViewController.xib in Resources */,
+				55CF10D22708668300EFDFD1 /* HomeTabBarViewController.xib in Resources */,
+				55CF10E02708744600EFDFD1 /* MesesCochesViewController.xib in Resources */,
 				55CF10B827083D8C00EFDFD1 /* LaunchScreen.storyboard in Resources */,
+				55CF10E52708747900EFDFD1 /* PostsViewController.xib in Resources */,
 				55CF10B527083D8C00EFDFD1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,9 +256,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CF10D42708669700EFDFD1 /* HomeTabBarCoordinator.swift in Sources */,
+				55CF10CC270847F100EFDFD1 /* Utils.swift in Sources */,
 				55CF10C627083F9800EFDFD1 /* UserDataViewController.swift in Sources */,
+				55CF10DF2708744600EFDFD1 /* MesesCochesViewController.swift in Sources */,
 				55CF10C927083FBF00EFDFD1 /* UserDataCoordinator.swift in Sources */,
+				55CF10E42708747900EFDFD1 /* PostsViewController.swift in Sources */,
+				55CF10D12708668300EFDFD1 /* HomeTabBarViewController.swift in Sources */,
 				55CF10AC27083D8900EFDFD1 /* AppDelegate.swift in Sources */,
+				55CF10E92708758B00EFDFD1 /* PostsCoordinator.swift in Sources */,
+				55CF10DB2708738C00EFDFD1 /* PerfilViewCoordinator.swift in Sources */,
+				55CF10E72708757C00EFDFD1 /* MesesCochesCoordinator.swift in Sources */,
+				55CF10D82708737E00EFDFD1 /* PerfilViewController.swift in Sources */,
 				55CF10C127083EA000EFDFD1 /* AppCoreCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
