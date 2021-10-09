@@ -36,6 +36,10 @@
 		556B553E2710BCBE00E13215 /* DetalleContactoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556B553D2710BCBE00E13215 /* DetalleContactoCoordinator.swift */; };
 		556B55422710BFA000E13215 /* PerfilCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556B55402710BFA000E13215 /* PerfilCell.swift */; };
 		556B55432710BFA000E13215 /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556B55412710BFA000E13215 /* PerfilCell.xib */; };
+		558656EA2711826200872817 /* CategoriaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558656E82711826200872817 /* CategoriaViewController.swift */; };
+		558656EB2711826200872817 /* CategoriaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 558656E92711826200872817 /* CategoriaViewController.xib */; };
+		558656ED2711827800872817 /* CategoriaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558656EC2711827800872817 /* CategoriaCoordinator.swift */; };
+		558656EF27118C1E00872817 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558656EE27118C1E00872817 /* TaskModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +74,10 @@
 		556B553D2710BCBE00E13215 /* DetalleContactoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoCoordinator.swift; sourceTree = "<group>"; };
 		556B55402710BFA000E13215 /* PerfilCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilCell.swift; sourceTree = "<group>"; };
 		556B55412710BFA000E13215 /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
+		558656E82711826200872817 /* CategoriaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaViewController.swift; sourceTree = "<group>"; };
+		558656E92711826200872817 /* CategoriaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaViewController.xib; sourceTree = "<group>"; };
+		558656EC2711827800872817 /* CategoriaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCoordinator.swift; sourceTree = "<group>"; };
+		558656EE27118C1E00872817 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskModel.swift; path = ../../../../../../../../../Downloads/TaskModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +142,7 @@
 		556B55002710897A00E13215 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				558656E72711824700872817 /* CategoriaView */,
 				556B55382710BC7700E13215 /* DetalleContactoView */,
 				556B552027109A5900E13215 /* NuevaTareaView */,
 				556B551927109A1C00E13215 /* ListaTareasView */,
@@ -214,6 +223,7 @@
 		556B552E2710A58400E13215 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				558656EE27118C1E00872817 /* TaskModel.swift */,
 				556B552F2710A5A900E13215 /* ContactosServerModel.swift */,
 			);
 			path = Models;
@@ -246,6 +256,16 @@
 				556B55412710BFA000E13215 /* PerfilCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		558656E72711824700872817 /* CategoriaView */ = {
+			isa = PBXGroup;
+			children = (
+				558656E82711826200872817 /* CategoriaViewController.swift */,
+				558656E92711826200872817 /* CategoriaViewController.xib */,
+				558656EC2711827800872817 /* CategoriaCoordinator.swift */,
+			);
+			path = CategoriaView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +336,7 @@
 				556B55432710BFA000E13215 /* PerfilCell.xib in Resources */,
 				556B553C2710BC9100E13215 /* DetalleContactoViewController.xib in Resources */,
 				556B551F27109A4000E13215 /* ListaTareasViewController.xib in Resources */,
+				558656EB2711826200872817 /* CategoriaViewController.xib in Resources */,
 				556B5504271089A300E13215 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,8 +354,10 @@
 				556B55132710994100E13215 /* HomeTabBarCoordinator.swift in Sources */,
 				556B5503271089A300E13215 /* LoginViewController.swift in Sources */,
 				556B55362710B18700E13215 /* ContactosCell.swift in Sources */,
+				558656EF27118C1E00872817 /* TaskModel.swift in Sources */,
 				556B552627109ABC00E13215 /* ContactosViewCoordinator.swift in Sources */,
 				556B550927108C3300E13215 /* AppCoreCoordinator.swift in Sources */,
+				558656ED2711827800872817 /* CategoriaCoordinator.swift in Sources */,
 				556B550C2710906B00E13215 /* Utils+Helpers.swift in Sources */,
 				556B55102710992700E13215 /* HomeTabBarViewController.swift in Sources */,
 				556B5517271099E000E13215 /* ContactosViewController.swift in Sources */,
@@ -345,6 +368,7 @@
 				556B552A27109B2700E13215 /* NuevaTareaCoordinator.swift in Sources */,
 				556B54EB271088C800E13215 /* AppDelegate.swift in Sources */,
 				556B55302710A5A900E13215 /* ContactosServerModel.swift in Sources */,
+				558656EA2711826200872817 /* CategoriaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

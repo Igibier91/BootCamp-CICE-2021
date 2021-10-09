@@ -40,7 +40,7 @@ extension DetalleContactoViewController: UITableViewDelegate, UITableViewDataSou
         return perfilCell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 300
+        return UITableView.automaticDimension
     }
 
 }

@@ -13,7 +13,9 @@ import UIKit
 final class NuevaTareaCoordinator{
     // Retornamos un NavigationController (Embeber un NavigationController)
     static func navigation() -> UINavigationController {
-        UINavigationController(rootViewController: viewController())
+        let navVC = UINavigationController()
+        navVC.navigationBar.setNavigationBarAppearance(backgrounddColor: UIColor.red)
+        return navVC
     }
     
     // Devuelve la primera view, este controlador que ponga es el que va a cargar arriba
