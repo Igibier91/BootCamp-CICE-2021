@@ -12,8 +12,10 @@ import UIKit
 // Coordinador -> Ensambla las piezas
 final class CategoriaCoordinator{
     // Devuelve la primera view, este controlador que ponga es el que va a cargar arriba
-    static func viewController() -> UIViewController {
-        CategoriaViewController()
-    }
+    static func viewController(delegate: CategoriaViewControllerDelegate) -> UIViewController {
+       let vc = CategoriaViewController()
+        vc.delegate = delegate
+        return vc
+        }
     
 }

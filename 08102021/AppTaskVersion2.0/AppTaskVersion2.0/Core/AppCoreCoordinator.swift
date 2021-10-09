@@ -20,6 +20,8 @@ final class AppCoreCoordinator {
 
 extension AppCoreCoordinator: AppCoreCoordiantorProtocol{
     internal func initialViewController(in window: UIWindow) {
+        
+        self.localNotificationsSetup()
         // Si esto es true, deberia mostrarme la Home
         if Utils.Constantes().kPreferences.bool(forKey: Utils.Constantes().kUsuarioLogado) {
             self.actualVC = HomeTabBarViewCoordinator.viewController() } else {
@@ -29,6 +31,15 @@ extension AppCoreCoordinator: AppCoreCoordiantorProtocol{
        // self.actualVC = LoginViewCoordinator.viewController()
         window.rootViewController = self.actualVC
         window.makeKeyAndVisible()
+    }
+    
+    
+    private func localNotificationsSetup(){
+        //Solicitamos al user que necesitamos enviarle notificaciones
+        if UIApplication.instancesRespond(to: #selector(UIApplication.registerUserNotificationSettings(_:))){
+            let setting = UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil)
+            UIApplication.shared.registerUserNotificationSettings(setting)
+        }
     }
     
 }

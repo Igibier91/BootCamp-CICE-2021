@@ -40,6 +40,8 @@
 		558656EB2711826200872817 /* CategoriaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 558656E92711826200872817 /* CategoriaViewController.xib */; };
 		558656ED2711827800872817 /* CategoriaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558656EC2711827800872817 /* CategoriaCoordinator.swift */; };
 		558656EF27118C1E00872817 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558656EE27118C1E00872817 /* TaskModel.swift */; };
+		558656F32711A33500872817 /* CategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558656F12711A33500872817 /* CategoriaCell.swift */; };
+		558656F42711A33500872817 /* CategoriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 558656F22711A33500872817 /* CategoriaCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		558656E92711826200872817 /* CategoriaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaViewController.xib; sourceTree = "<group>"; };
 		558656EC2711827800872817 /* CategoriaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCoordinator.swift; sourceTree = "<group>"; };
 		558656EE27118C1E00872817 /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TaskModel.swift; path = ../../../../../../../../../Downloads/TaskModel.swift; sourceTree = "<group>"; };
+		558656F12711A33500872817 /* CategoriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCell.swift; sourceTree = "<group>"; };
+		558656F22711A33500872817 /* CategoriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,11 +265,21 @@
 		558656E72711824700872817 /* CategoriaView */ = {
 			isa = PBXGroup;
 			children = (
+				558656F02711A31F00872817 /* Cell */,
 				558656E82711826200872817 /* CategoriaViewController.swift */,
 				558656E92711826200872817 /* CategoriaViewController.xib */,
 				558656EC2711827800872817 /* CategoriaCoordinator.swift */,
 			);
 			path = CategoriaView;
+			sourceTree = "<group>";
+		};
+		558656F02711A31F00872817 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				558656F12711A33500872817 /* CategoriaCell.swift */,
+				558656F22711A33500872817 /* CategoriaCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +343,7 @@
 				556B54F7271088C900E13215 /* LaunchScreen.storyboard in Resources */,
 				556B552427109A6900E13215 /* NuevaTareaViewController.xib in Resources */,
 				556B55372710B18700E13215 /* ContactosCell.xib in Resources */,
+				558656F42711A33500872817 /* CategoriaCell.xib in Resources */,
 				556B55112710992700E13215 /* HomeTabBarViewController.xib in Resources */,
 				556B5518271099E000E13215 /* ContactosViewController.xib in Resources */,
 				556B552D2710A45300E13215 /* contacts.json in Resources */,
@@ -369,6 +384,7 @@
 				556B54EB271088C800E13215 /* AppDelegate.swift in Sources */,
 				556B55302710A5A900E13215 /* ContactosServerModel.swift in Sources */,
 				558656EA2711826200872817 /* CategoriaViewController.swift in Sources */,
+				558656F32711A33500872817 /* CategoriaCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

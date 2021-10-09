@@ -13,7 +13,7 @@ import UIKit
 final class NuevaTareaCoordinator{
     // Retornamos un NavigationController (Embeber un NavigationController)
     static func navigation() -> UINavigationController {
-        let navVC = UINavigationController()
+        let navVC = UINavigationController(rootViewController: viewController())
         navVC.navigationBar.setNavigationBarAppearance(backgrounddColor: UIColor.red)
         return navVC
     }
