@@ -19,6 +19,10 @@
 		554769F62719CC0000CDA835 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554769F52719CC0000CDA835 /* SplashCoordinator.swift */; };
 		554769F82719CCAE00CDA835 /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554769F72719CCAE00CDA835 /* SplashProvider.swift */; };
 		554769FA2719D66B00CDA835 /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554769F92719D66B00CDA835 /* AppCoreCoordinator.swift */; };
+		554769FD2719D9EC00CDA835 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554769FC2719D9EC00CDA835 /* NetworkService.swift */; };
+		554769FF2719DBEE00CDA835 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554769FE2719DBEE00CDA835 /* NetworkError.swift */; };
+		55476A022719DC7000CDA835 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55476A012719DC7000CDA835 /* Utils.swift */; };
+		55476A052719E9B700CDA835 /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55476A042719E9B700CDA835 /* MusicServerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		554769F52719CC0000CDA835 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		554769F72719CCAE00CDA835 /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		554769F92719D66B00CDA835 /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
+		554769FC2719D9EC00CDA835 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		554769FE2719DBEE00CDA835 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = ../../../../../../../../../Downloads/NetworkError.swift; sourceTree = "<group>"; };
+		55476A012719DC7000CDA835 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		55476A042719E9B700CDA835 /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +76,8 @@
 		554769CF2719C76E00CDA835 /* CiceCupon */ = {
 			isa = PBXGroup;
 			children = (
+				55476A002719DC6200CDA835 /* Utils+Helpers */,
+				554769FB2719D9C400CDA835 /* NetworkService */,
 				554769E82719CB7A00CDA835 /* Modules */,
 				554769E52719C7EB00CDA835 /* BaseVIPER */,
 				554769E42719C79600CDA835 /* Core */,
@@ -114,6 +124,7 @@
 		554769EA2719CB9700CDA835 /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
+				55476A032719E9A400CDA835 /* Models */,
 				554769EB2719CBB500CDA835 /* SplashViewController.swift */,
 				554769EC2719CBB500CDA835 /* SplashViewController.xib */,
 				554769EF2719CBCA00CDA835 /* SplashPresenter.swift */,
@@ -123,6 +134,31 @@
 				554769F72719CCAE00CDA835 /* SplashProvider.swift */,
 			);
 			path = SplashView;
+			sourceTree = "<group>";
+		};
+		554769FB2719D9C400CDA835 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				554769FC2719D9EC00CDA835 /* NetworkService.swift */,
+				554769FE2719DBEE00CDA835 /* NetworkError.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		55476A002719DC6200CDA835 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55476A012719DC7000CDA835 /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		55476A032719E9A400CDA835 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55476A042719E9B700CDA835 /* MusicServerModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55476A052719E9B700CDA835 /* MusicServerModel.swift in Sources */,
+				554769FD2719D9EC00CDA835 /* NetworkService.swift in Sources */,
 				554769ED2719CBB500CDA835 /* SplashViewController.swift in Sources */,
 				554769F42719CBF400CDA835 /* SplashRouter.swift in Sources */,
 				554769D12719C76E00CDA835 /* AppDelegate.swift in Sources */,
@@ -204,7 +242,9 @@
 				554769F82719CCAE00CDA835 /* SplashProvider.swift in Sources */,
 				554769E72719C7FD00CDA835 /* BaseVIPER.swift in Sources */,
 				554769F02719CBCA00CDA835 /* SplashPresenter.swift in Sources */,
+				554769FF2719DBEE00CDA835 /* NetworkError.swift in Sources */,
 				554769FA2719D66B00CDA835 /* AppCoreCoordinator.swift in Sources */,
+				55476A022719DC7000CDA835 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
