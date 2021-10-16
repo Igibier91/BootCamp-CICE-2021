@@ -32,6 +32,9 @@
 		55B4725B271ACB3800F99EC7 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B47254271ACB3800F99EC7 /* LoginCoordinator.swift */; };
 		55B4725C271ACB3800F99EC7 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B47255271ACB3800F99EC7 /* LoginPresenter.swift */; };
 		55B4725D271ACB3800F99EC7 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B47256271ACB3800F99EC7 /* LoginInteractor.swift */; };
+		55B47261271AD69100F99EC7 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B4725F271AD69100F99EC7 /* HomeTabBarViewController.swift */; };
+		55B47262271AD69100F99EC7 /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55B47260271AD69100F99EC7 /* HomeTabBarViewController.xib */; };
+		55B47264271AD69D00F99EC7 /* HomeTabBarViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B47263271AD69D00F99EC7 /* HomeTabBarViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		55B47254271ACB3800F99EC7 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		55B47255271ACB3800F99EC7 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		55B47256271ACB3800F99EC7 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		55B4725F271AD69100F99EC7 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		55B47260271AD69100F99EC7 /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		55B47263271AD69D00F99EC7 /* HomeTabBarViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +177,7 @@
 		554769E92719CB8300CDA835 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				55B4725E271AD67100F99EC7 /* HomeTabBar */,
 				55B47233271AC7E000F99EC7 /* LoginView */,
 				554769EA2719CB9700CDA835 /* SplashView */,
 			);
@@ -229,6 +236,16 @@
 				55B47256271ACB3800F99EC7 /* LoginInteractor.swift */,
 			);
 			path = LoginView;
+			sourceTree = "<group>";
+		};
+		55B4725E271AD67100F99EC7 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				55B4725F271AD69100F99EC7 /* HomeTabBarViewController.swift */,
+				55B47260271AD69100F99EC7 /* HomeTabBarViewController.xib */,
+				55B47263271AD69D00F99EC7 /* HomeTabBarViewCoordinator.swift */,
+			);
+			path = HomeTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +340,7 @@
 				554769DD2719C77000CDA835 /* LaunchScreen.storyboard in Resources */,
 				554769EE2719CBB500CDA835 /* SplashViewController.xib in Resources */,
 				554769DA2719C77000CDA835 /* Assets.xcassets in Resources */,
+				55B47262271AD69100F99EC7 /* HomeTabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +362,7 @@
 			files = (
 				55B4725B271ACB3800F99EC7 /* LoginCoordinator.swift in Sources */,
 				55B4725D271ACB3800F99EC7 /* LoginInteractor.swift in Sources */,
+				55B47264271AD69D00F99EC7 /* HomeTabBarViewCoordinator.swift in Sources */,
 				55B47258271ACB3800F99EC7 /* LoginViewController.swift in Sources */,
 				55476A052719E9B700CDA835 /* MusicServerModel.swift in Sources */,
 				55B4725A271ACB3800F99EC7 /* LoginProvider.swift in Sources */,
@@ -351,6 +370,7 @@
 				554769ED2719CBB500CDA835 /* SplashViewController.swift in Sources */,
 				554769F42719CBF400CDA835 /* SplashRouter.swift in Sources */,
 				554769D12719C76E00CDA835 /* AppDelegate.swift in Sources */,
+				55B47261271AD69100F99EC7 /* HomeTabBarViewController.swift in Sources */,
 				554769F22719CBD500CDA835 /* SplashInteractor.swift in Sources */,
 				554769F62719CC0000CDA835 /* SplashCoordinator.swift in Sources */,
 				55B47259271ACB3800F99EC7 /* LoginRouter.swift in Sources */,

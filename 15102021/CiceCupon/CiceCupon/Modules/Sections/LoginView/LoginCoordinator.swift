@@ -36,12 +36,13 @@ final class LoginCoordinator {
 }
     static func view() -> LoginViewController & LoginViewControllerProtocol{
         let vc = LoginViewController()
-        vc.presenter = self.presenter(vc: vc)
+        vc.presenter = self.presenter(vc: vc, dto: dto)
         return vc
     }
     
     static func presenter(vc: LoginViewController) -> LoginPresenterInputProtocol & LoginInteractorOutputProtocol {
-        let presenter = LoginPresenter(vc: vc)
+        let presenter = LoginPresenter(vc: vc, dto: LoginCoordinatorDTO? = nil) ->
+        presenter.arrayResultados = dto?.resultMusic ?? []
         presenter.interactor = self.interactor(pre: presenter)
         presenter.router = self.router(vc: vc)
         
@@ -60,5 +61,6 @@ final class LoginCoordinator {
     
     
 struct LoginCoordinatorDTO {
+    var resultMusic: [ResultMusic]?
     
 }

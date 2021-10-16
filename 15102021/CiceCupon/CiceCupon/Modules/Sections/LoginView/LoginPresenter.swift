@@ -15,12 +15,13 @@ POSSIBILITY OF SUCH DAMAGE.
 import Foundation
 
 protocol LoginPresenterInputProtocol {
-    func fetchData()
-    func getInformationObject() -> ResultMusic?
+    func navigateToHomeTabBar()
+    //func fetchData()
+    //func getInformationObject() -> ResultMusic?
 }
 
 protocol LoginInteractorOutputProtocol {
-    func fetchDataOutputInteractor(data: MusicServerModel?)
+//    func fetchDataOutputInteractor(data: MusicServerModel?)
     
 }
 
@@ -33,19 +34,23 @@ final class LoginPresenter: BasePresenter<LoginViewControllerProtocol, LoginInte
 }
 
 extension LoginPresenter: LoginPresenterInputProtocol {
-    func fetchData(){
+    func navigateToHomeTabBar() {
+        self.router?.navigateToHome(with: self.arrayResultados)
+    }
+    
+//    func fetchData(){
         
-    }
-    func getInformationObject() -> ResultMusic? {
-        return self.arrayResultados[0]
-    }
+ //   }
+ //   func getInformationObject() -> ResultMusic? {
+//        return self.arrayResultados[0]
+ //   }
 }
 
 extension LoginPresenter: LoginInteractorOutputProtocol {
-    func fetchDataOutputInteractor(data: MusicServerModel?) {
-        self.arrayResultados.removeAll()
-        self.arrayResultados = data?.feed?.results ?? []
-        self.vc?.refreshView()
-    }
+  //  func fetchDataOutputInteractor(data: MusicServerModel?) {
+    //    self.arrayResultados.removeAll()
+      //  self.arrayResultados = data?.feed?.results ?? []
+        //self.vc?.refreshView()
+   // }
 }
 

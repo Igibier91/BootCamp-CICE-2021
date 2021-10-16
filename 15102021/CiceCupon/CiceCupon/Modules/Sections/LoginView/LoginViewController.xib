@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
             <connections>
+                <outlet property="loginBTN" destination="DYC-1M-GT6" id="Hb4-Nf-RIV"/>
+                <outlet property="loginViewPasswordTF" destination="2fA-tf-2Ih" id="gME-kd-kDX"/>
+                <outlet property="loginViewUsernameTF" destination="HoR-0S-Y8B" id="F1h-NB-xne"/>
                 <outlet property="view" destination="iN0-l3-epB" id="0KK-4V-vEI"/>
             </connections>
         </placeholder>
@@ -17,14 +20,52 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HoR-0S-Y8B">
+                    <rect key="frame" x="18" y="64" width="378" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-tf-2Ih">
+                    <rect key="frame" x="18" y="118" width="378" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYC-1M-GT6">
+                    <rect key="frame" x="18" y="172" width="378" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Tv5-wn-RgL"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Login">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="loginACTION:" destination="-1" eventType="touchUpInside" id="k6m-Em-Ee5"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.072315163910388947" green="0.79759961366653442" blue="0.95897585153579712" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HoR-0S-Y8B" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="6QX-6A-bnQ"/>
+                <constraint firstItem="HoR-0S-Y8B" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="6tF-6f-of4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2fA-tf-2Ih" secondAttribute="trailing" constant="18" id="SMH-kq-631"/>
+                <constraint firstItem="DYC-1M-GT6" firstAttribute="top" secondItem="2fA-tf-2Ih" secondAttribute="bottom" constant="20" id="jOI-PN-Vjj"/>
+                <constraint firstItem="2fA-tf-2Ih" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="kDi-un-IPS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HoR-0S-Y8B" secondAttribute="trailing" constant="18" id="m0P-v6-vFe"/>
+                <constraint firstItem="2fA-tf-2Ih" firstAttribute="top" secondItem="HoR-0S-Y8B" secondAttribute="bottom" constant="20" id="rbj-5i-Bfc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DYC-1M-GT6" secondAttribute="trailing" constant="18" id="sPw-9q-dQb"/>
+                <constraint firstItem="DYC-1M-GT6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="18" id="u2M-h2-ROt"/>
+            </constraints>
             <point key="canvasLocation" x="31.884057971014496" y="132.58928571428572"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

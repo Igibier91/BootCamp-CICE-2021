@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 enum HTTPMethods: String {
@@ -45,4 +46,23 @@ struct URLEndpoint {
     static let podcast = "podcasts/top/%@/podcast-episodes.json"
 static let books = "books/top-free/%@/books.json"
     static let apps = "apps/top-free/%@/apps.json"
+}
+
+class Utils {
+    
+    struct Constantes {
+        let kUsuario = "USUARIO"
+        let kPassword = "PASSWORD"
+        // Grabar nosotros directamente en el user default los datos
+        let kPreferences = UserDefaults.standard
+        // Para decir si esta logado o no y ya no mostrarte el login mas
+        let kUsuarioLogado = "LOGADO"
+        
+    }
+    //Mostrar alerta
+    static func muestraAlerta(titulo: String, mensaje: String) -> UIAlertController {
+        let alertVC = UIAlertController(title: titulo, message: mensaje, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .default))
+        return alertVC
+    }
 }
