@@ -13,23 +13,32 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import UIKit
 
 protocol LoginRouterInputProtocol {
-    func navigateToHome(with data: [ResultMusic])
+    func navigateToHome(with data: [ResultiTunes])
+    func showCustomAlertError(with model: CustomAlertViewModel, delegate: CustomAlertDefaultViewControllerDelegate?)
 }
 
 final class LoginRouter: BaseRouter<LoginViewController> {
     
-    
-
 }
 
 extension LoginRouter: LoginRouterInputProtocol {
-    func navigateToHome(with data: [ResultMusic]) {
-        let vc = HomeTabBarViewCoordinator.tabBarViewCoordinator()
+    func navigateToHome(with data: [ResultiTunes]) {
+        DispatchQueue.main.async {
+            let vc = HomeTabBarCoordinator.tabBarCoordinator(dto: HomeTabBarCoordinatorDTO(arrayMusic: data))
             vc.modalTransitionStyle = .coverVertical
-        vc.modalPresentationStyle = .fullScreen
+            vc.modalPresentationStyle = .fullScreen
+            self.view?.present(vc, animated: true, completion: nil)
+        }
+    }
+    func showCustomAlertError(with model: CustomAlertViewModel, delegate: CustomAlertDefaultViewControllerDelegate?) {
+        let vc = CustomAlertDefaultViewController()
+        vc.viewModel = model
+        vc.delegate = delegate
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
         self.view?.present(vc, animated: true, completion: nil)
     }
+    
 }

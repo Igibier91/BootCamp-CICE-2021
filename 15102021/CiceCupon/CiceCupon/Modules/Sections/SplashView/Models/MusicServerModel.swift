@@ -1,14 +1,14 @@
 //
-//  MusicServerModel.swift
+//  ItunesServerModel.swift
 //  CiceCupon
 //
-//  Created by Ignacio Gilabert Bernal on 15/10/21.
+//  Created by Andres Felipe Ocampo Eljaiek on 15/10/21.
 //
 
 import Foundation
 
-// MARK: - MusicServerModel
-struct MusicServerModel: Codable {
+// MARK: - ItunesServerModel
+struct ItunesServerModel: Codable {
     let feed: Feed?
 
     enum CodingKeys: String, CodingKey {
@@ -26,7 +26,7 @@ struct Feed: Codable {
     let country: String?
     let icon: String?
     let updated: String?
-    let results: [ResultMusic]?
+    let results: [ResultiTunes]?
 
     enum CodingKeys: String, CodingKey {
         case title = "title"
@@ -62,12 +62,12 @@ struct Link: Codable {
 }
 
 // MARK: - Result
-struct ResultMusic: Codable {
+struct ResultiTunes: Codable {
     let artistName: String?
     let id: String?
     let name: String?
     let releaseDate: String?
-    let kind: Kind?
+    let kind: String?
     let artistId: String?
     let artistUrl: String?
     let artworkUrl100: String?
@@ -114,8 +114,4 @@ enum Name: String, Codable {
     case music = "Music"
     case pop = "Pop"
     case rBSoul = "R&B/Soul"
-}
-
-enum Kind: String, Codable {
-    case songs = "songs"
 }

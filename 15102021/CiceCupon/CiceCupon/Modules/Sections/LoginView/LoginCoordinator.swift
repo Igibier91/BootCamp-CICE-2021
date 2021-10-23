@@ -1,17 +1,4 @@
 /*
-Copyright, everisSL
-All rights reserved.
-
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
-
-1. Redistributions of source code must retain the above copyright notice, this
-list of conditions and the following disclaimer.
-
-2. Redistributions in binary form must reproduce the above copyright notice,
-this list of conditions and the following disclaimer in the documentation
-and/or other materials provided with the distribution.
-
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -26,41 +13,43 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import UIKit
 
 // MARK: - module builder
-
 final class LoginCoordinator {
+
+    // creamos la navegacion (opcional)
     static func navigation(dto: LoginCoordinatorDTO? = nil) -> BaseNavigation {
-        BaseNavigation(rootViewController: view())
-}
-    static func view() -> LoginViewController & LoginViewControllerProtocol{
+       BaseNavigation(rootViewController: view())
+    }
+    
+    // creamos la Vista con el retorno de los protocolos de la vista
+    static func view(dto: LoginCoordinatorDTO? = nil) -> LoginViewController & LoginViewControllerProtocol {
         let vc = LoginViewController()
         vc.presenter = self.presenter(vc: vc, dto: dto)
         return vc
     }
     
-    static func presenter(vc: LoginViewController) -> LoginPresenterInputProtocol & LoginInteractorOutputProtocol {
-        let presenter = LoginPresenter(vc: vc, dto: LoginCoordinatorDTO? = nil) ->
-        presenter.arrayResultados = dto?.resultMusic ?? []
+    // creamos el presenter con el retorno de los protocolos de entrada al presenter y salida del interactor
+    static func presenter(vc: LoginViewController, dto: LoginCoordinatorDTO? = nil) -> LoginPresenterInputProtocol & LoginInteractorOutputProtocol {
+        let presenter = LoginPresenter(vc: vc)
+        presenter.arrayResultados = dto?.ResultiTunes ?? []
         presenter.interactor = self.interactor(pre: presenter)
         presenter.router = self.router(vc: vc)
-        
         return presenter
     }
     
-    static func interactor(pre:LoginPresenter) -> LoginInteractorInputProtocol {
+    static func interactor(pre: LoginPresenter) -> LoginInteractorInputProtocol {
         let interactor = LoginInteractor(presenter: pre)
         return interactor
     }
-    static func router(vc: LoginViewController) -> LoginRouterInputProtocol{
+    
+    static func router(vc: LoginViewController) -> LoginRouterInputProtocol {
         let router = LoginRouter(view: vc)
         return router
     }
+    
 }
-    
-    
+
 struct LoginCoordinatorDTO {
-    var resultMusic: [ResultMusic]?
-    
+    var ResultiTunes: [ResultiTunes]?
 }

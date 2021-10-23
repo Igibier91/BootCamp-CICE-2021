@@ -2,38 +2,35 @@
 //  SplashRouter.swift
 //  CiceCupon
 //
-//  Created by Ignacio Gilabert Bernal on 15/10/21.
+//  Created by Andres Felipe Ocampo Eljaiek on 15/10/21.
 //
 
 import Foundation
 
-protocol SplashRouterInputProtocol{
-    func navigateToLoginView(with data: [ResultMusic])
-    
+protocol SplashRouterInputProtocol {
+    func navigateToLoginView(with data: [ResultiTunes])
 }
 
 final class SplashRouter: BaseRouter<SplashViewController> {
     
 }
 
-extension SplashRouter: SplashRouterInputProtocol{
-    func navigateToLoginView(with data: [ResultMusic]) {
+extension SplashRouter: SplashRouterInputProtocol {
+    
+    func navigateToLoginView(with data: [ResultiTunes]) {
         DispatchQueue.main.async {
-            if !Utils.Constantes().kPreferences.bool(forKey: Utils.Constantes().kUsuarioLogado){
-                let vc = LoginCoordinator.view()
+            if !Utils.Constantes().kPreferences.bool(forKey: Utils.Constantes().kUsuarioLogado) {
+                let vc = LoginCoordinator.view(dto: LoginCoordinatorDTO(ResultiTunes: data))
                 vc.modalTransitionStyle = .crossDissolve
                 vc.modalPresentationStyle = .fullScreen
                 self.view?.present(vc, animated: true, completion: nil)
             } else {
-            let vc = HomeTabBarViewCoordinator.tabBarViewCoordinator()
+                let vc = HomeTabBarCoordinator.tabBarCoordinator(dto: HomeTabBarCoordinatorDTO(arrayMusic: data))
                 vc.modalTransitionStyle = .crossDissolve
-            vc.modalPresentationStyle = .fullScreen
-            self.view?.present(vc, animated: true, completion: nil)
+                vc.modalPresentationStyle = .fullScreen
+                self.view?.present(vc, animated: true, completion: nil)
+            }
         }
-
-        }
-
-
     }
     
     

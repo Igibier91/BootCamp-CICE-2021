@@ -19,13 +19,11 @@ protocol LoginViewControllerProtocol {
 }
 
 class LoginViewController: BaseView<LoginPresenterInputProtocol> {
-   //MARK: - Variables
     
+    // MARK: - Variables
     var isLoged = false
-        
-    
-    
-    //MARK: - IBOutlets
+
+    // MARK: - IBOutlet
     @IBOutlet weak var loginViewUsernameTF: UITextField!
     @IBOutlet weak var loginViewPasswordTF: UITextField!
     @IBOutlet weak var loginBTN: UIButton!
@@ -34,40 +32,45 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
         if dataComplete(){
             self.isLoged = true
             Utils.Constantes().kPreferences.set(self.loginViewUsernameTF.text, forKey: Utils.Constantes().kUsuario)
-            Utils.Constantes().kPreferences.set(self.loginViewPasswordTF.text, forKey: Utils.Constantes().kPassword)
+            Utils.Constantes().kPreferences.set(self.loginViewPasswordTF.text, forKey: Utils.Constantes().kContrasena)
             Utils.Constantes().kPreferences.set(self.isLoged, forKey: Utils.Constantes().kUsuarioLogado)
             self.presenter?.navigateToHomeTabBar()
-
         } else {
-            self.present(Utils.muestraAlerta(titulo: "Hola!", mensaje: "Tienes que rellenar todos los campos"), animated: true, completion: nil)
+            self.presenter?.showCustomAlertError()            
+            
+  //          self.present(Utils.muestraAlerta(titulo: LocalizedKeys.Login.titleHelloAlert,
+    //                                         mensaje: LocalizedKeys.Login.messageWarningAlert),
+      //                   animated: true,
+        //                 completion: nil)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configUI()
-      //  self.presenter?.fetchData()
-       
+        //self.presenter?.fetchData()
     }
-
-    private func configUI(){
+    
+    private func configUI() {
         self.loginBTN.layer.cornerRadius = 25
         self.loginBTN.layer.borderWidth = 2
         self.loginBTN.layer.borderColor = UIColor.white.cgColor
     }
     
-    private func dataComplete() -> Bool{
-        !(self.loginViewUsernameTF.text?.isEmpty ?? false) && !(self.loginViewPasswordTF.text?.isEmpty ?? false)
-        
+    private func dataComplete() -> Bool {
+        return !(self.loginViewUsernameTF.text?.isEmpty ?? false) && !(self.loginViewPasswordTF.text?.isEmpty ?? false)
     }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
 }
 
 extension LoginViewController: LoginViewControllerProtocol {
 
     func refreshView() {
-  //      let aux = self.presenter?.getInformationObject()
-   //     debugPrint(aux!)
         
     }
 }

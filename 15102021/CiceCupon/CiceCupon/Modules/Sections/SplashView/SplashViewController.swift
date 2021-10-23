@@ -2,13 +2,13 @@
 //  SplashViewController.swift
 //  CiceCupon
 //
-//  Created by Ignacio Gilabert Bernal on 15/10/21.
+//  Created by Andres Felipe Ocampo Eljaiek on 15/10/21.
 //
 
 import UIKit
 
-protocol SplashViewControllerProtocol{
-    
+protocol SplashViewControllerProtocol {
+    func refreshView()
 }
 
 class SplashViewController: BaseView<SplashPresenterInputProtocol> {
@@ -19,9 +19,13 @@ class SplashViewController: BaseView<SplashPresenterInputProtocol> {
         // Do any additional setup after loading the view.
     }
 
-
 }
 
-extension SplashViewController: SplashViewControllerProtocol{
+extension SplashViewController: SplashViewControllerProtocol {
+    
+    func refreshView() {
+        let aux = self.presenter?.getInformationObject()
+        debugPrint(aux!)
+    }
     
 }

@@ -1,0 +1,12 @@
+// General
+"title_my_alert" = "Mi contenido";
+"message_my_alert" = "Tu contenido descargado está en el limite, borre o limpie ficheros del dispositivo";
+"general_accept" = "Aceptar";
+"general_cancel" = "Cancelar";
+
+// Login
+"title_hello" = "Hola!";
+"message_warning_alert" = "Tienes que rellenar todos los campos para continuar";
+// Bill
+
+// Menu

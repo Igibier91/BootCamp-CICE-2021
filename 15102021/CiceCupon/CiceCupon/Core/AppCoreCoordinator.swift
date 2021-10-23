@@ -2,21 +2,23 @@
 //  AppCoreCoordinator.swift
 //  CiceCupon
 //
-//  Created by Ignacio Gilabert Bernal on 15/10/21.
+//  Created by Andres Felipe Ocampo Eljaiek on 15/10/21.
 //
 
 import Foundation
 import UIKit
 
-protocol AppCoreCoordinatorProtocol{
+protocol AppCoreCoordinatorProtocol {
     func initialViewController(in window: UIWindow)
 }
 
-final class AppCoreCoordinator{
+
+final class AppCoreCoordinator {
     var actualVC = UIViewController()
 }
 
 extension AppCoreCoordinator: AppCoreCoordinatorProtocol {
+    
     func initialViewController(in window: UIWindow) {
         self.actualVC = SplashCoordinator.view()
         window.rootViewController = self.actualVC

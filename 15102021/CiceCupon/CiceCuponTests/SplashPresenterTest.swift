@@ -2,7 +2,7 @@
 //  SplashPresenterTest.swift
 //  CiceCuponTests
 //
-//  Created by Ignacio Gilabert Bernal on 16/10/21.
+//  Created by Andres Felipe Ocampo Eljaiek on 16/10/21.
 //
 
 import XCTest
@@ -13,8 +13,9 @@ class SplashPresenterTest: XCTestCase {
     var splashPre: SplashPresenterInputProtocol = SplashPresenter()
 
     override func setUpWithError() throws {
-//        let aux = splashPre.getInformationObject()
-//      XCTAssertNotNil(aux)
+        let aux = splashPre.getInformationObject()
+        XCTAssertNotNil(aux)
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
 
     override func tearDownWithError() throws {

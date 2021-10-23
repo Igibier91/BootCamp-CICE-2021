@@ -14,30 +14,28 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-protocol LoginInteractorInputProtocol{
+protocol LoginInteractorInputProtocol {
     func fetchDataMusic()
-
 }
 
 final class LoginInteractor: BaseInteractor<LoginInteractorOutputProtocol> {
     
     let provider: LoginProviderProtocol = LoginProvider()
     
-    
 }
 
 extension LoginInteractor: LoginInteractorInputProtocol {
+    
     func fetchDataMusic() {
         self.provider.fetchData { data in
             switch data {
-            case .success(let response):
-                debugPrint(response.feed?.results?.count ?? 0)
+            case .success(let response): break
+                // Se invoca a la salida del interactor que van hacia el Presenter -> InteractorOutput
+                //self.presenter?.fetchDataOutputInteractor(data: response)
             case .failure(let error):
                 debugPrint(error)
             }
-        } failure: { NetworkError in
-            debugPrint(NetworkError.localizedDescription)
         }
-
     }
+    
 }

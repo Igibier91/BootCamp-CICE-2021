@@ -2,7 +2,7 @@
 //  CiceCuponTests.swift
 //  CiceCuponTests
 //
-//  Created by Ignacio Gilabert Bernal on 16/10/21.
+//  Created by Andres Felipe Ocampo Eljaiek on 16/10/21.
 //
 
 import XCTest
