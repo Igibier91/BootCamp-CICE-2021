@@ -903,7 +903,7 @@
 				B47C47632723ECB500DD5336 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = PRE;
+			defaultConfigurationName = DEV;
 		};
 		B4CBDD4A2719C77800270887 /* Build configuration list for PBXProject "CiceCupon" */ = {
 			isa = XCConfigurationList;
@@ -913,7 +913,7 @@
 				B47C47612723ECB500DD5336 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = PRE;
+			defaultConfigurationName = DEV;
 		};
 		B4CBDD632719C77B00270887 /* Build configuration list for PBXNativeTarget "CiceCupon" */ = {
 			isa = XCConfigurationList;
@@ -923,7 +923,7 @@
 				B47C47622723ECB500DD5336 /* PRO */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = PRE;
+			defaultConfigurationName = DEV;
 		};
 /* End XCConfigurationList section */
 

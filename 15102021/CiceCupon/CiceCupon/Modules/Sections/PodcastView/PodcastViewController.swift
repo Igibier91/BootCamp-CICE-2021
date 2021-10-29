@@ -15,24 +15,57 @@ POSSIBILITY OF SUCH DAMAGE.
 import UIKit
 
 protocol PodcastViewControllerProtocol {
-    func refreshView()
+ //   func refreshView()
 }
 
 class PodcastViewController: BaseView<PodcastPresenterInputProtocol> {
    
+    // MARK: - IBOutlets
+    @IBOutlet weak var podcastTV: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.presenter?.fetchData()
-       
+ //       self.presenter?.fetchData()
+        self.configTableView()
     }
 
+    private func configTableView(){
+        self.podcastTV.delegate = self
+        self.podcastTV.dataSource = self
+        self.podcastTV.register(PodcastCell.nib, forCellReuseIdentifier: PodcastCell.identifier)
+    }
+    
 }
 
 extension PodcastViewController: PodcastViewControllerProtocol {
 
-    func refreshView() {
-        let aux = self.presenter?.getInformationObject()
-        debugPrint(aux!)
+ //   func refreshView() {
+   //     let aux = self.presenter?.getInformationObject()
+     //   debugPrint(aux!)
         
+  //  }
+}
+
+extension PodcastViewController: PodcastViewControllerProtocol{
+    
+}
+
+extension PodcastViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.presenter?.getNumerOfRowInSection() ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellPodcast = self.podcastTV.dequeueReusableCell(withIdentifier: PodcastCell.identifier, for: indexPath) as! PodcastCell
+        if let model = self.presenter?.getInformationObject(with: indexPath.row){
+            cellPodcast.configCell(data: model)
+        }
+        return cellPodcast
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 192
     }
 }
+
+
