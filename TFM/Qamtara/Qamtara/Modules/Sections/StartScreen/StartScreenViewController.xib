@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="alagard.ttf">
+            <string>Alagard</string>
+        </array>
+        <array key="romulus.ttf">
+            <string>Romulus</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartScreenViewController" customModule="Qamtara" customModuleProvider="target">
+            <connections>
+                <outlet property="subtitleLBL" destination="9dI-dF-Xy3" id="Zpt-K6-OOL"/>
+                <outlet property="titleLBL" destination="oyE-WH-Jox" id="Dft-AL-Qca"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="8Er-mo-obv">
+                    <rect key="frame" x="0.0" y="0.0" width="844" height="390"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oyE-WH-Jox">
+                    <rect key="frame" x="64" y="40" width="716" height="66"/>
+                    <fontDescription key="fontDescription" name="Alagard" family="Alagard" pointSize="70"/>
+                    <color key="textColor" red="0.93212765455245972" green="0.88224822282791138" blue="0.040161646902561188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dI-dF-Xy3">
+                    <rect key="frame" x="64" y="111" width="716" height="30"/>
+                    <fontDescription key="fontDescription" name="Romulus" family="Romulus" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaS-Sx-HN3" userLabel="playBTN">
+                    <rect key="frame" x="262" y="181" width="320" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="101" id="J1f-kX-dQj"/>
+                        <constraint firstAttribute="width" constant="320" id="hnn-XV-F6u"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="buttonPlay"/>
+                    <connections>
+                        <action selector="playBTNACT:" destination="-1" eventType="touchUpInside" id="sgo-c4-Gxh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od3-Gs-T2M" userLabel="tutorialBTN">
+                    <rect key="frame" x="283.66666666666669" y="283" width="277.00000000000006" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="277" id="Q75-oB-L0I"/>
+                        <constraint firstAttribute="height" constant="101" id="ksJ-9g-Pva"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="buttonTutorial"/>
+                    <connections>
+                        <action selector="tutorialBTNACT:" destination="-1" eventType="touchUpInside" id="sRj-Td-owk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9dI-dF-Xy3" firstAttribute="top" secondItem="oyE-WH-Jox" secondAttribute="bottom" constant="5" id="1NL-qW-JYK"/>
+                <constraint firstItem="vaS-Sx-HN3" firstAttribute="top" secondItem="9dI-dF-Xy3" secondAttribute="bottom" constant="40" id="8rG-6M-fCu"/>
+                <constraint firstItem="9dI-dF-Xy3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="AV3-Wp-Hau"/>
+                <constraint firstItem="vaS-Sx-HN3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G4C-q7-2Hz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oyE-WH-Jox" secondAttribute="trailing" constant="20" id="PNh-8P-HyU"/>
+                <constraint firstItem="od3-Gs-T2M" firstAttribute="top" secondItem="vaS-Sx-HN3" secondAttribute="bottom" constant="1" id="aeI-JJ-eqG"/>
+                <constraint firstItem="8Er-mo-obv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="b2m-Ue-Epg"/>
+                <constraint firstAttribute="bottom" secondItem="8Er-mo-obv" secondAttribute="bottom" id="eTR-Lv-z0l"/>
+                <constraint firstItem="oyE-WH-Jox" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="gkt-Fm-bDD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9dI-dF-Xy3" secondAttribute="trailing" constant="20" id="hyd-64-gKQ"/>
+                <constraint firstItem="8Er-mo-obv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iPh-Yd-13L"/>
+                <constraint firstItem="oyE-WH-Jox" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="ksv-Tg-rME"/>
+                <constraint firstAttribute="trailing" secondItem="8Er-mo-obv" secondAttribute="trailing" id="l9Y-55-fWS"/>
+                <constraint firstItem="od3-Gs-T2M" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tYd-cL-lOC"/>
+            </constraints>
+            <point key="canvasLocation" x="131.51658767772511" y="73.84615384615384"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="StartScreenBackground" width="1920" height="1080"/>
+        <image name="buttonPlay" width="253" height="87"/>
+        <image name="buttonTutorial" width="253" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
