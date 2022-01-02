@@ -36,15 +36,17 @@
                     <fontDescription key="fontDescription" name="Alagard" family="Alagard" pointSize="70"/>
                     <color key="textColor" red="0.93212765455245972" green="0.88224822282791138" blue="0.040161646902561188" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Subtitle" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dI-dF-Xy3">
-                    <rect key="frame" x="64" y="111" width="716" height="30"/>
+                    <rect key="frame" x="64" y="111" width="716" height="31"/>
                     <fontDescription key="fontDescription" name="Romulus" family="Romulus" pointSize="35"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaS-Sx-HN3" userLabel="playBTN">
-                    <rect key="frame" x="262" y="181" width="320" height="101"/>
+                    <rect key="frame" x="262" y="182" width="320" height="101"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="101" id="J1f-kX-dQj"/>
                         <constraint firstAttribute="width" constant="320" id="hnn-XV-F6u"/>
@@ -56,7 +58,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="od3-Gs-T2M" userLabel="tutorialBTN">
-                    <rect key="frame" x="283.66666666666669" y="283" width="277.00000000000006" height="101"/>
+                    <rect key="frame" x="283.66666666666669" y="284" width="277.00000000000006" height="101"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="277" id="Q75-oB-L0I"/>
                         <constraint firstAttribute="height" constant="101" id="ksJ-9g-Pva"/>

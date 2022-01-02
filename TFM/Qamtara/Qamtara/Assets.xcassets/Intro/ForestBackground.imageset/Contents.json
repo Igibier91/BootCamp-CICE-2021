@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "557270_video-games-pixel-art-wallpapers-hd_1920x1200_h.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		551302C32781F8DB0046F797 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551302C12781F8DB0046F797 /* IntroViewController.swift */; };
+		551302C42781F8DB0046F797 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 551302C22781F8DB0046F797 /* IntroViewController.xib */; };
+		551302C62781F8F50046F797 /* IntroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551302C52781F8F50046F797 /* IntroCoordinator.swift */; };
 		5556AC4E27427769006A0682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5556AC4D27427769006A0682 /* AppDelegate.swift */; };
 		5556AC572742776B006A0682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC562742776B006A0682 /* Assets.xcassets */; };
 		5556AC6627427968006A0682 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5556AC6427427968006A0682 /* StartScreenViewController.swift */; };
@@ -17,11 +20,12 @@
 		5556AC752742892C006A0682 /* romulus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC732742892C006A0682 /* romulus.ttf */; };
 		5556AC762742892C006A0682 /* alagard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC742742892C006A0682 /* alagard.ttf */; };
 		5556AC782742915E006A0682 /* HUD_BUTTONS_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC772742915E006A0682 /* HUD_BUTTONS_2.png */; };
-		5556AC7C2742BC17006A0682 /* AlertTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5556AC7A2742BC17006A0682 /* AlertTutorialViewController.swift */; };
-		5556AC7D2742BC17006A0682 /* AlertTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC7B2742BC17006A0682 /* AlertTutorialViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		551302C12781F8DB0046F797 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		551302C22781F8DB0046F797 /* IntroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IntroViewController.xib; sourceTree = "<group>"; };
+		551302C52781F8F50046F797 /* IntroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroCoordinator.swift; sourceTree = "<group>"; };
 		5556AC4A27427769006A0682 /* Qamtara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qamtara.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5556AC4D27427769006A0682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5556AC562742776B006A0682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,8 +38,6 @@
 		5556AC732742892C006A0682 /* romulus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = romulus.ttf; sourceTree = "<group>"; };
 		5556AC742742892C006A0682 /* alagard.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alagard.ttf; sourceTree = "<group>"; };
 		5556AC772742915E006A0682 /* HUD_BUTTONS_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_BUTTONS_2.png; sourceTree = "<group>"; };
-		5556AC7A2742BC17006A0682 /* AlertTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTutorialViewController.swift; sourceTree = "<group>"; };
-		5556AC7B2742BC17006A0682 /* AlertTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertTutorialViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		551302BA2781F85A0046F797 /* Intro */ = {
+			isa = PBXGroup;
+			children = (
+				551302C12781F8DB0046F797 /* IntroViewController.swift */,
+				551302C22781F8DB0046F797 /* IntroViewController.xib */,
+				551302C52781F8F50046F797 /* IntroCoordinator.swift */,
+			);
+			path = Intro;
+			sourceTree = "<group>";
+		};
 		5556AC4127427769006A0682 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +103,7 @@
 		5556AC6227427918006A0682 /* Sections */ = {
 			isa = PBXGroup;
 			children = (
-				5556AC792742BBD3006A0682 /* Alerts */,
+				551302BA2781F85A0046F797 /* Intro */,
 				5556AC632742793D006A0682 /* StartScreen */,
 			);
 			path = Sections;
@@ -130,15 +142,6 @@
 				5556AC732742892C006A0682 /* romulus.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		5556AC792742BBD3006A0682 /* Alerts */ = {
-			isa = PBXGroup;
-			children = (
-				5556AC7A2742BC17006A0682 /* AlertTutorialViewController.swift */,
-				5556AC7B2742BC17006A0682 /* AlertTutorialViewController.xib */,
-			);
-			path = Alerts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +207,7 @@
 				5556AC752742892C006A0682 /* romulus.ttf in Resources */,
 				5556AC6727427968006A0682 /* StartScreenViewController.xib in Resources */,
 				5556AC762742892C006A0682 /* alagard.ttf in Resources */,
-				5556AC7D2742BC17006A0682 /* AlertTutorialViewController.xib in Resources */,
+				551302C42781F8DB0046F797 /* IntroViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,9 +221,10 @@
 				5556AC712742817C006A0682 /* Utils.swift in Sources */,
 				5556AC4E27427769006A0682 /* AppDelegate.swift in Sources */,
 				5556AC6C27427AED006A0682 /* AppCoreCoordinator.swift in Sources */,
+				551302C32781F8DB0046F797 /* IntroViewController.swift in Sources */,
 				5556AC692742799E006A0682 /* StartScreenCoordinator.swift in Sources */,
 				5556AC6627427968006A0682 /* StartScreenViewController.swift in Sources */,
-				5556AC7C2742BC17006A0682 /* AlertTutorialViewController.swift in Sources */,
+				551302C62781F8F50046F797 /* IntroCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
