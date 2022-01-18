@@ -27,7 +27,14 @@ class StartScreenViewController: UIViewController {
         navigateIntro()
     }
     
-    @IBAction func tutorialBTNACT(_ sender: Any) {
+    @IBAction func tutorialBTNACT(_ sender: UIButton) {
+        
+        playSound(soundName: "Ok")
+        sender.alpha = 0.5
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            sender.alpha = 1
+        }
+        
         showAlertTutorial(title: "Qamtara", message: "Qamtara es un minijuego desarrollado como parte del programa de aprendizaje de la escuela CICE por Ignacio Gilabert. Dentro de este, vamos a poner en práctica conceptos de Swift con UIKit. El juego no necesita mucha explicación, la aventura te irá guiando a través de la imponente tierra de Qamtara. Espero que lo disfrutes casi tanto como yo haciéndolo. Muchas gracias por tu tiempo y dedicación. ")
     }
     
@@ -59,6 +66,7 @@ class StartScreenViewController: UIViewController {
         player.play()
     }
     
+   
     // mostrar un tutorial como una alerta
     func showAlertTutorial(title: String, message: String) {
         let alertGuide = UIAlertController(title: title, message: message, preferredStyle: .alert)
