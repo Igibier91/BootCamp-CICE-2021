@@ -6,15 +6,24 @@
 //
 
 import UIKit
+import AVFoundation
 
 class StartScreenViewController: UIViewController {
+    // MARK: - Variables
+    var player: AVAudioPlayer!
+    var soundName: String = ""
     
     // MARK: - IBOutlets
     @IBOutlet weak var subtitleLBL: UILabel!
     @IBOutlet weak var titleLBL: UILabel!
     
     // MARK: - IBActions
-    @IBAction func playBTNACT(_ sender: Any) {
+    @IBAction func playBTNACT(_ sender: UIButton) {
+        playSound(soundName: "Play")
+        sender.alpha = 0.5
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            sender.alpha = 1
+        }
         navigateIntro()
     }
     
@@ -42,6 +51,12 @@ class StartScreenViewController: UIViewController {
     func setTexts() {
         titleLBL.text = "Qamtara"
         subtitleLBL.text = "Un RPG para mis compañeros de CICE"
+    }
+    
+    func playSound(soundName: String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "wav")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
     
     // mostrar un tutorial como una alerta

@@ -20,6 +20,8 @@
 		5556AC752742892C006A0682 /* romulus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC732742892C006A0682 /* romulus.ttf */; };
 		5556AC762742892C006A0682 /* alagard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC742742892C006A0682 /* alagard.ttf */; };
 		5556AC782742915E006A0682 /* HUD_BUTTONS_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC772742915E006A0682 /* HUD_BUTTONS_2.png */; };
+		55F408D52796E32A00C88309 /* Ok.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55F408D32796E32A00C88309 /* Ok.wav */; };
+		55F408D62796E32A00C88309 /* Play.wav in Resources */ = {isa = PBXBuildFile; fileRef = 55F408D42796E32A00C88309 /* Play.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		5556AC732742892C006A0682 /* romulus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = romulus.ttf; sourceTree = "<group>"; };
 		5556AC742742892C006A0682 /* alagard.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alagard.ttf; sourceTree = "<group>"; };
 		5556AC772742915E006A0682 /* HUD_BUTTONS_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HUD_BUTTONS_2.png; sourceTree = "<group>"; };
+		55F408D32796E32A00C88309 /* Ok.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ok.wav; sourceTree = "<group>"; };
+		55F408D42796E32A00C88309 /* Play.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Play.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 		5556AC4C27427769006A0682 /* Qamtara */ = {
 			isa = PBXGroup;
 			children = (
+				55F408D22796DFAE00C88309 /* Sounds */,
 				5556AC72274288CB006A0682 /* Fonts */,
 				5556AC6F27428166006A0682 /* Utils+Helpers */,
 				5556AC6A27427ADD006A0682 /* Core */,
@@ -152,6 +157,15 @@
 			path = StoryScreen;
 			sourceTree = "<group>";
 		};
+		55F408D22796DFAE00C88309 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				55F408D32796E32A00C88309 /* Ok.wav */,
+				55F408D42796E32A00C88309 /* Play.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,6 +226,8 @@
 			files = (
 				5556AC572742776B006A0682 /* Assets.xcassets in Resources */,
 				5556AC782742915E006A0682 /* HUD_BUTTONS_2.png in Resources */,
+				55F408D62796E32A00C88309 /* Play.wav in Resources */,
+				55F408D52796E32A00C88309 /* Ok.wav in Resources */,
 				5556AC752742892C006A0682 /* romulus.ttf in Resources */,
 				5556AC6727427968006A0682 /* StartScreenViewController.xib in Resources */,
 				5556AC762742892C006A0682 /* alagard.ttf in Resources */,
