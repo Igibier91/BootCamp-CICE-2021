@@ -32,14 +32,15 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
             sender.alpha = 1
         }
+        heroName()
         navigateTrial()
+        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setTexts()
-        heroName()
         
         // forzar landscape orientation
         let value = UIInterfaceOrientation.landscapeRight.rawValue
@@ -58,7 +59,8 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     }
     
     func heroName() {
-        
+       heroNameTXT = heroNameTF.text!
+       print(heroNameTXT)
     }
     
     func navigateTrial(){

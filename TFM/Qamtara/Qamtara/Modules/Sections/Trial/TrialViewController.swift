@@ -12,8 +12,17 @@ class TrialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        // forzar landscape orientation
+        let value = UIInterfaceOrientation.landscapeRight.rawValue
+        UIDevice.current.setValue(value, forKey: "orientation")
+        }
+        override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+            return .landscapeRight
+        }
+        override var shouldAutorotate: Bool {
+            return true
+        }
+    
 
 
     /*
