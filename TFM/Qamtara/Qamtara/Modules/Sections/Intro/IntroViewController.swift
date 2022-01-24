@@ -55,6 +55,10 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Functions
     func setTexts() {
         introTextLBL.text = "¿Hola? ¿¡Hola!? ¿Qué haces ahí tirado en medio del bosque? Pensaba que eras el elegido para salvar a Qamtara de la tiranía de Loz Orkolokoz, y mírate, no te puedes ni mover. ¿Podrías al menos ESCRIBIR tu nombre?"
+        introTextLBL.layer.shadowColor = UIColor.black.cgColor
+        introTextLBL.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        introTextLBL.layer.shadowOpacity = 1.0
+        introTextLBL.layer.shadowRadius = 2.0
     }
     
     func heroName() {

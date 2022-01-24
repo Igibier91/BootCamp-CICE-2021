@@ -58,6 +58,14 @@ class StartScreenViewController: UIViewController {
     func setTexts() {
         titleLBL.text = "Qamtara"
         subtitleLBL.text = "Un RPG para mis compañeros de CICE"
+        subtitleLBL.layer.shadowColor = UIColor.black.cgColor
+        subtitleLBL.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        subtitleLBL.layer.shadowOpacity = 1.0
+        subtitleLBL.layer.shadowRadius = 2.0
+        titleLBL.layer.shadowColor = UIColor.black.cgColor
+        titleLBL.layer.shadowOffset = CGSize(width: 3.0, height: 3.0)
+        titleLBL.layer.shadowOpacity = 1.0
+        titleLBL.layer.shadowRadius = 2.0
     }
     
     func playSound(soundName: String) {
