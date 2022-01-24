@@ -1,24 +1,19 @@
 //
-//  TrialViewController.swift
+//  CombatViewController.swift
 //  Qamtara
 //
-//  Created by Ignacio Gilabert Bernal on 18/1/22.
+//  Created by Ignacio Gilabert Bernal on 24/1/22.
 //
 
 import UIKit
 
-class TrialViewController: UIViewController {
+class CombatViewController: UIViewController {
 
     // MARK: - Variables
     var heroNameChosen: String?
     
-    // MARK: - IBOutlets
-    @IBOutlet weak var trialTextLBL: UILabel!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTexts()
 
         // forzar landscape orientation
         let value = UIInterfaceOrientation.landscapeRight.rawValue
@@ -32,16 +27,4 @@ class TrialViewController: UIViewController {
         }
     
 
-
-    // MARK: - Functions
-    func setTexts() {
-        trialTextLBL.text = "Pero bueno \(heroNameChosen ?? "Héroe"), mira que hora es."
-    }
-
-    func navigateCombat(){
-        let mainVC = CombatViewController()
-        mainVC.heroNameChosen = heroNameChosen
-        present(mainVC, animated: true, completion: nil)
-    }
-    
 }

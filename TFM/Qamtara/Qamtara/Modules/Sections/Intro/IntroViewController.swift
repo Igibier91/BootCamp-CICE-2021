@@ -8,7 +8,6 @@
 import UIKit
 import AVFoundation
 
-
 class IntroViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Variables
@@ -65,6 +64,7 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     
     func navigateTrial(){
         let mainVC = TrialViewController()
+        mainVC.heroNameChosen = heroNameTXT
         present(mainVC, animated: true, completion: nil)
     }
     // called when 'return' key pressed. return NO to ignore.
@@ -78,6 +78,7 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
         player = try! AVAudioPlayer(contentsOf: url!)
         player.play()
     }
+    
     
     }
 
