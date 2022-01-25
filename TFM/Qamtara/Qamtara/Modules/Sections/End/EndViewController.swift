@@ -9,6 +9,10 @@ import UIKit
 
 class EndViewController: UIViewController {
 
+    // MARK: - Variables
+    var heroNameChosen: String?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
