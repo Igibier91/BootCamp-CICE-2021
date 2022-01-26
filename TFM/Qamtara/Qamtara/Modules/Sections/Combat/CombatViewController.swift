@@ -29,6 +29,7 @@ class CombatViewController: UIViewController {
     @IBOutlet weak var orkoHealth: UIProgressView!
     @IBOutlet weak var heroNameLBL: UILabel!
     @IBOutlet weak var orkolokoNameLBL: UILabel!
+    @IBOutlet weak var damageLBL: UILabel!
     
     
     // MARK: - IBActions
@@ -61,6 +62,9 @@ class CombatViewController: UIViewController {
         heroHealth.progress = 1
         orkoHealth.progress = 1
         
+        // Label transparency
+        damageLBL.alpha = 0
+        
 
 
         // forzar landscape orientation
@@ -87,6 +91,11 @@ class CombatViewController: UIViewController {
         orkolokoNameLBL.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         orkolokoNameLBL.layer.shadowOpacity = 1.0
         orkolokoNameLBL.layer.shadowRadius = 2.0
+        
+        damageLBL.layer.shadowColor = UIColor.black.cgColor
+        damageLBL.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        damageLBL.layer.shadowOpacity = 1.0
+        damageLBL.layer.shadowRadius = 2.0
     }
     
     
@@ -221,27 +230,51 @@ class CombatViewController: UIViewController {
         
         
         // Updating HP Bars Progress
+        
+        damageLBL.alpha = 1
+
         if (totalHealthLoss > 0){
             orkoHealth.progress -= (0.05 * totalHealthLossFloat)
+            damageLBL.text = "Le inflijes \(Int(totalHealthLossFloat)) de daño"
+            
         }
         if (totalHealthLoss < 0){
             heroHealth.progress -= (0.025 * totalHealthLossFloat)
+            damageLBL.text = "Te inflije \(Int(totalHealthLossFloat)) de daño"
         }
         
-    
+        if (totalHealthLoss == 0){
+            damageLBL.text = dmgZeroTXT
+        }
     
     }
      
     func navigateDefeat(){
-        let mainVC = EndViewController()
-        mainVC.heroNameChosen = heroNameChosen
-        present(mainVC, animated: true, completion: nil)
+        showAlertDefeat(title: "¡Has sido derrotado!", message: showAlertDefeatTXT)
+      
+
+        
     }
     
     func navigateEnd(){
         let mainVC = EndViewController()
-        mainVC.heroNameChosen = heroNameChosen
         present(mainVC, animated: true, completion: nil)
+   
+    }
+    
+    // show alert for retry the game
+    func showAlertDefeat(title: String, message: String) {
+        let alertGuide = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        let guideOK = UIAlertAction(title: "Reintentar", style: .default) { UIAlertAction in
+            
+            let mainVC = StartScreenViewController()
+
+            self.present(mainVC, animated: true, completion: nil)
+        }
+        alertGuide.addAction(guideOK)
+        present(alertGuide, animated: true, completion: nil)
+    
     }
     
 }

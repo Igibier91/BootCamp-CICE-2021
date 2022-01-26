@@ -26,6 +26,10 @@
 		5556AC712742817C006A0682 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5556AC702742817C006A0682 /* Utils.swift */; };
 		5556AC752742892C006A0682 /* romulus.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC732742892C006A0682 /* romulus.ttf */; };
 		5556AC762742892C006A0682 /* alagard.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5556AC742742892C006A0682 /* alagard.ttf */; };
+		557CA3E327A17A3100893E09 /* EndMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 557CA3E127A17A3100893E09 /* EndMusic.mp3 */; };
+		557CA3E427A17A3100893E09 /* StartMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 557CA3E227A17A3100893E09 /* StartMusic.wav */; };
+		557CA3E627A17BE100893E09 /* MainMusic.wav in Resources */ = {isa = PBXBuildFile; fileRef = 557CA3E527A17BE100893E09 /* MainMusic.wav */; };
+		557CA3E827A17E8900893E09 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 557CA3E727A17E8900893E09 /* README.md */; };
 		5583C3D227973FDE00B6FA6D /* TrialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583C3D027973FDE00B6FA6D /* TrialViewController.swift */; };
 		5583C3D327973FDE00B6FA6D /* TrialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5583C3D127973FDE00B6FA6D /* TrialViewController.xib */; };
 		5583C3D52797400300B6FA6D /* TrialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5583C3D42797400300B6FA6D /* TrialCoordinator.swift */; };
@@ -55,6 +59,10 @@
 		5556AC702742817C006A0682 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		5556AC732742892C006A0682 /* romulus.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = romulus.ttf; sourceTree = "<group>"; };
 		5556AC742742892C006A0682 /* alagard.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alagard.ttf; sourceTree = "<group>"; };
+		557CA3E127A17A3100893E09 /* EndMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = EndMusic.mp3; sourceTree = "<group>"; };
+		557CA3E227A17A3100893E09 /* StartMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = StartMusic.wav; sourceTree = "<group>"; };
+		557CA3E527A17BE100893E09 /* MainMusic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = MainMusic.wav; sourceTree = "<group>"; };
+		557CA3E727A17E8900893E09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = "../../Mis Ejercicios/EggTimer-iOS13-master/README.md"; sourceTree = "<group>"; };
 		5583C3D027973FDE00B6FA6D /* TrialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialViewController.swift; sourceTree = "<group>"; };
 		5583C3D127973FDE00B6FA6D /* TrialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrialViewController.xib; sourceTree = "<group>"; };
 		5583C3D42797400300B6FA6D /* TrialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrialCoordinator.swift; sourceTree = "<group>"; };
@@ -106,6 +114,7 @@
 		5556AC4127427769006A0682 = {
 			isa = PBXGroup;
 			children = (
+				557CA3E727A17E8900893E09 /* README.md */,
 				5556AC4C27427769006A0682 /* Qamtara */,
 				5556AC4B27427769006A0682 /* Products */,
 			);
@@ -202,6 +211,9 @@
 		55F408D22796DFAE00C88309 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				557CA3E527A17BE100893E09 /* MainMusic.wav */,
+				557CA3E227A17A3100893E09 /* StartMusic.wav */,
+				557CA3E127A17A3100893E09 /* EndMusic.mp3 */,
 				55F408D32796E32A00C88309 /* Ok.wav */,
 				55F408D42796E32A00C88309 /* Play.wav */,
 				5528E74D279F1F8D00B3533C /* Dice.wav */,
@@ -268,7 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5556AC572742776B006A0682 /* Assets.xcassets in Resources */,
+				557CA3E427A17A3100893E09 /* StartMusic.wav in Resources */,
 				55F408D62796E32A00C88309 /* Play.wav in Resources */,
+				557CA3E327A17A3100893E09 /* EndMusic.mp3 in Resources */,
+				557CA3E627A17BE100893E09 /* MainMusic.wav in Resources */,
 				5528E74E279F1F8D00B3533C /* Dice.wav in Resources */,
 				5528E748279F1D2F00B3533C /* EndViewController.xib in Resources */,
 				55F408D52796E32A00C88309 /* Ok.wav in Resources */,
@@ -276,6 +291,7 @@
 				5556AC752742892C006A0682 /* romulus.ttf in Resources */,
 				5556AC6727427968006A0682 /* StartScreenViewController.xib in Resources */,
 				5528E744279F1D1F00B3533C /* CombatViewController.xib in Resources */,
+				557CA3E827A17E8900893E09 /* README.md in Resources */,
 				5556AC762742892C006A0682 /* alagard.ttf in Resources */,
 				551302C42781F8DB0046F797 /* IntroViewController.xib in Resources */,
 			);

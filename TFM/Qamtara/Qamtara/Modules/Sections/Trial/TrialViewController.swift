@@ -34,6 +34,7 @@ class TrialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTexts()
+        playSound(soundName: "MainMusic")
 
         // forzar landscape orientation
         let value = UIInterfaceOrientation.landscapeRight.rawValue

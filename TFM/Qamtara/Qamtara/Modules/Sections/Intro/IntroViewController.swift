@@ -40,7 +40,8 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTexts()
-        
+        playSound(soundName: "MainMusic")
+
         // forzar landscape orientation
         let value = UIInterfaceOrientation.landscapeRight.rawValue
         UIDevice.current.setValue(value, forKey: "orientation")
@@ -54,7 +55,7 @@ class IntroViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: - Functions
     func setTexts() {
-        introTextLBL.text = "¿Hola? ¿¡Hola!? ¿Qué haces ahí tirado en medio del bosque? Pensaba que eras el elegido para salvar a Qamtara de la tiranía de Loz Orkolokoz, y mírate, no te puedes ni mover. ¿Podrías al menos ESCRIBIR tu nombre?"
+        introTextLBL.text = introTXT
         introTextLBL.layer.shadowColor = UIColor.black.cgColor
         introTextLBL.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         introTextLBL.layer.shadowOpacity = 1.0

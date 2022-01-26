@@ -35,13 +35,13 @@ class StartScreenViewController: UIViewController {
             sender.alpha = 1
         }
         
-        showAlertTutorial(title: "Qamtara", message: "Qamtara es un minijuego desarrollado como parte del programa de aprendizaje de la escuela CICE por Ignacio Gilabert. Dentro de este, vamos a poner en práctica conceptos de Swift con UIKit. El juego no necesita mucha explicación, la aventura te irá guiando a través de la imponente tierra de Qamtara. Espero que lo disfrutes casi tanto como yo haciéndolo. Muchas gracias por tu tiempo y dedicación. ")
+        showAlertTutorial(title: "Qamtara", message: showAlertTutorialTXT)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setTexts()
-        
+        playSound(soundName: "StartMusic")
         
     // forzar landscape orientation
     let value = UIInterfaceOrientation.landscapeRight.rawValue
@@ -56,8 +56,8 @@ class StartScreenViewController: UIViewController {
     
     // MARK: - Functions
     func setTexts() {
-        titleLBL.text = "Qamtara"
-        subtitleLBL.text = "Un RPG para mis compañeros de CICE"
+        titleLBL.text = titleTXT
+        subtitleLBL.text = subtitleTXT
         subtitleLBL.layer.shadowColor = UIColor.black.cgColor
         subtitleLBL.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         subtitleLBL.layer.shadowOpacity = 1.0
